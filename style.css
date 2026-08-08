@@ -1,0 +1,35 @@
+/* ── Fonts ─────────────────────────────────────────────────────────────────── */
+/* Loaded via Google Fonts in index.html, this file contains fallback definitions */
+
+/* ── Reset & Base ──────────────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #FAF9F6;
+  color: #31572C;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Display font (Fraunces) ───────────────────────────────────────────────── */
+.display-font {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #90A955;
+  border-radius: 3px;
+}

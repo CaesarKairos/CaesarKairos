@@ -1,13 +1,19 @@
+# Dependências
 node_modules/
+
+# Build
 dist/
 build/
 .cache/
+
+# Ambiente
 .env*
-.vite/
-vite.config.*.timestamp-*
-*.tsbuildinfo
-*-debug.log*
-logs/
+.env.local
+
+# Logs
 *.log
-.claude-replay.*
-.tmp-*
+logs/
+
+# Sistema
+.DS_Store
+Thumbs.db
