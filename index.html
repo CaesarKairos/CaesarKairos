@@ -21,7 +21,7 @@
     <div class="min-h-screen bg-[#FAF9F6]">
 
       <!-- ═══ Nav ═══ -->
-      <nav id="nav" class="fixed top-0 left-0 right-0 z-50 bg-[#FAF9F6]/90 backdrop-blur-sm border-b border-[#90A955]/20">
+      <nav id="nav" class="fixed top-0 left-0 right-0 z-50 bg-[#FAF9F6]/90 backdrop-blur-sm border-b border-[#90A955]/20 nav-solid">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#hero" class="display-font text-[#31572C] font-semibold text-lg tracking-tight hover:text-[#40916C] transition-colors">
             Caesar Kairos
@@ -29,11 +29,11 @@
 
           <!-- Desktop nav -->
           <div class="hidden md:flex items-center gap-8">
-            <a href="#sobre" class="text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium">Sobre</a>
-            <a href="#projetos" class="text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium">Projetos</a>
-            <a href="#skills" class="text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium">Skills</a>
-            <a href="#artigos" class="text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium">Artigos</a>
-            <a href="#contato" class="text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium">Contato</a>
+            <a href="#sobre" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="sobre">Sobre</a>
+            <a href="#projetos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="projetos">Projetos</a>
+            <a href="#skills" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="skills">Skills</a>
+            <a href="#artigos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="artigos">Artigos</a>
+            <a href="#contato" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="contato">Contato</a>
             <a href="#contato" class="ml-2 px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
               Fale comigo
             </a>
@@ -72,7 +72,7 @@
       <section id="hero" class="pt-28 pb-20 px-6 max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <!-- Photo placeholder -->
-          <div class="relative">
+          <div class="relative hero-photo">
             <div class="aspect-[3/4] max-w-sm mx-auto lg:mx-0 rounded-2xl border-2 border-[#90A955]/40 bg-[#ECF39E]/30 overflow-hidden flex items-end justify-center">
               <div class="w-full h-full bg-gradient-to-br from-[#ECF39E]/50 via-[#90A955]/20 to-[#40916C]/30 flex items-center justify-center">
                 <div class="text-center opacity-40">
@@ -84,25 +84,25 @@
               </div>
             </div>
             <!-- Decorative accent -->
-            <div class="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-[#ECF39E] -z-10 lg:block hidden"></div>
-            <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#90A955]/30 -z-10 lg:block hidden"></div>
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-[#ECF39E] -z-10 lg:block hidden float-slow"></div>
+            <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#90A955]/30 -z-10 lg:block hidden float-slower"></div>
           </div>
 
           <!-- Content -->
           <div class="flex flex-col gap-6">
-            <div>
+            <div class="hero-item">
               <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Desenvolvedor Full Stack</p>
               <h1 class="display-font text-6xl lg:text-7xl font-bold text-[#31572C] leading-[0.95] mb-4">
                 Port<em class="not-italic text-[#40916C]">fólio</em>
               </h1>
             </div>
 
-            <p class="text-base text-[#31572C]/80 leading-relaxed max-w-lg">
+            <p class="hero-item text-base text-[#31572C]/80 leading-relaxed max-w-lg">
               <strong class="text-[#31572C] font-semibold">Cesar Batista</strong> (Caesar Kairos) — estudante de Desenvolvimento de Sistemas e desenvolvedor Full Stack, com experiência em frontend, backend, APIs, bancos de dados e integração entre serviços e tecnologias.
             </p>
 
             <!-- Social links -->
-            <div class="flex gap-3">
+            <div class="hero-item flex gap-3">
               <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all"><!-- TODO: link real -->
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
@@ -125,7 +125,7 @@
             </div>
 
             <!-- Tech stack -->
-            <div class="mt-2 space-y-3">
+            <div class="hero-item mt-2 space-y-3">
               <!-- Frontend -->
               <div class="flex flex-wrap items-center gap-2">
                 <span class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide">Frontend</span>
@@ -187,7 +187,7 @@
       <section id="sobre" class="py-20 px-6 bg-[#31572C]">
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12 lg:gap-20">
-            <div class="lg:sticky lg:top-24 lg:self-start">
+            <div class="reveal lg:sticky lg:top-24 lg:self-start">
               <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Quem sou</p>
               <h2 class="display-font text-5xl font-bold text-[#ECF39E] leading-tight">
                 Sobre<br />mim
@@ -206,7 +206,7 @@
 
             <div class="space-y-10">
               <!-- Bloco 01 -->
-              <div class="flex gap-6 group">
+              <div class="reveal flex gap-6 group" data-stagger="1">
                 <span class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors">01</span>
                 <div class="border-t border-[#90A955]/20 pt-4 flex-1">
                   <h3 class="display-font text-xl font-semibold text-[#ECF39E] mb-3">Trajetória</h3>
@@ -214,7 +214,7 @@
                 </div>
               </div>
               <!-- Bloco 02 -->
-              <div class="flex gap-6 group">
+              <div class="reveal flex gap-6 group" data-stagger="2">
                 <span class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors">02</span>
                 <div class="border-t border-[#90A955]/20 pt-4 flex-1">
                   <h3 class="display-font text-xl font-semibold text-[#ECF39E] mb-3">O que me move</h3>
@@ -222,7 +222,7 @@
                 </div>
               </div>
               <!-- Bloco 03 -->
-              <div class="flex gap-6 group">
+              <div class="reveal flex gap-6 group" data-stagger="3">
                 <span class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors">03</span>
                 <div class="border-t border-[#90A955]/20 pt-4 flex-1">
                   <h3 class="display-font text-xl font-semibold text-[#ECF39E] mb-3">Fora do código</h3>
@@ -230,7 +230,7 @@
                 </div>
               </div>
               <!-- Bloco 04 -->
-              <div class="flex gap-6 group">
+              <div class="reveal flex gap-6 group" data-stagger="4">
                 <span class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors">04</span>
                 <div class="border-t border-[#90A955]/20 pt-4 flex-1">
                   <h3 class="display-font text-xl font-semibold text-[#ECF39E] mb-3">Visão de futuro</h3>
@@ -254,7 +254,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- BIBI -->
-            <div class="group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300">
+            <div class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="1">
               <div>
                 <div class="flex items-start justify-between gap-4 mb-2">
                   <h3 class="display-font text-2xl font-bold text-[#31572C] leading-tight">BIBI</h3>
@@ -288,7 +288,7 @@
             </div>
 
             <!-- Moovibe -->
-            <div class="group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300">
+            <div class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="2">
               <div>
                 <div class="flex items-start justify-between gap-4 mb-2">
                   <h3 class="display-font text-2xl font-bold text-[#31572C] leading-tight">Moovibe</h3>
@@ -322,14 +322,14 @@
             </div>
 
             <!-- Placeholder 1 -->
-            <div class="bg-[#ECF39E]/20 border border-dashed border-[#90A955]/40 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 min-h-[260px] text-center">
+            <div class="reveal bg-[#ECF39E]/20 border border-dashed border-[#90A955]/40 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 min-h-[260px] text-center" data-stagger="3">
               <div class="w-10 h-10 rounded-full border border-[#90A955]/40 flex items-center justify-center text-[#90A955] text-xl">+</div>
               <p class="text-sm text-[#90A955] font-medium">Próximo projeto</p>
               <p class="text-xs text-[#90A955]/60">Em breve</p>
             </div>
 
             <!-- Placeholder 2 -->
-            <div class="bg-[#ECF39E]/20 border border-dashed border-[#90A955]/40 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 min-h-[260px] text-center">
+            <div class="reveal bg-[#ECF39E]/20 border border-dashed border-[#90A955]/40 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 min-h-[260px] text-center" data-stagger="4">
               <div class="w-10 h-10 rounded-full border border-[#90A955]/40 flex items-center justify-center text-[#90A955] text-xl">+</div>
               <p class="text-sm text-[#90A955] font-medium">Próximo projeto</p>
               <p class="text-xs text-[#90A955]/60">Em breve</p>
@@ -341,13 +341,13 @@
       <!-- ═══ Skills ═══ -->
       <section id="skills" class="py-20 px-6 bg-[#ECF39E]/30">
         <div class="max-w-6xl mx-auto">
-          <div class="mb-10">
+          <div class="reveal mb-10">
             <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Ferramentas e saberes</p>
             <h2 class="display-font text-5xl font-bold text-[#31572C] leading-tight">Skills</h2>
           </div>
 
           <!-- Tabs -->
-          <div class="flex flex-wrap gap-2 mb-8">
+          <div class="reveal flex flex-wrap gap-2 mb-8">
             <button data-tab="Cursos" class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white border border-[#90A955]/30 text-[#40916C] hover:border-[#40916C]">Cursos</button>
             <button data-tab="Ferramentas" class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white border border-[#90A955]/30 text-[#40916C] hover:border-[#40916C]">Ferramentas</button>
             <button data-tab="Tecnologias" class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-[#40916C] text-[#FAF9F6]" id="default-tab">Tecnologias</button>
@@ -370,7 +370,7 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <a href="#" target="_blank" rel="noopener noreferrer" class="group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300"><!-- TODO: link real -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="reveal group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="1"><!-- TODO: link real -->
               <div class="flex items-start justify-between gap-4 mb-3">
                 <span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full">Substack</span>
                 <span class="text-[#90A955] opacity-60 group-hover:opacity-100 transition-opacity">
@@ -386,7 +386,7 @@
               <span class="text-xs text-[#90A955] font-medium">Em breve</span>
             </a>
 
-            <a href="#" target="_blank" rel="noopener noreferrer" class="group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300"><!-- TODO: link real -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="reveal group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="2"><!-- TODO: link real -->
               <div class="flex items-start justify-between gap-4 mb-3">
                 <span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full">Substack</span>
                 <span class="text-[#90A955] opacity-60 group-hover:opacity-100 transition-opacity">
@@ -408,7 +408,7 @@
       <!-- ═══ Footer ═══ -->
       <footer id="contato" class="bg-[#31572C] py-16 px-6">
         <div class="max-w-6xl mx-auto">
-          <div class="text-center mb-12">
+          <div class="reveal text-center mb-12">
             <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-4">Vamos conversar</p>
             <h2 class="display-font text-4xl md:text-5xl font-bold text-[#ECF39E] mb-4 leading-tight">
               Tem um projeto em mente?
@@ -418,7 +418,7 @@
             </p>
           </div>
 
-          <div class="flex flex-wrap justify-center gap-4 mb-16">
+          <div class="reveal flex flex-wrap justify-center gap-4 mb-16">
             <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all"><!-- TODO: link real -->
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />

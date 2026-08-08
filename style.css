@@ -33,3 +33,245 @@ body {
   background: #90A955;
   border-radius: 3px;
 }
+
+/* ════════════════════════════════════════════════════════════════════════════
+   ANIMAÇÕES
+   ════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Easing suave ──────────────────────────────────────────────────────────── */
+:root {
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-tactile: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Hero: entrada da página ───────────────────────────────────────────────── */
+/* Estado inicial: elementos escondidos até o JS "armar" a animação */
+html.js .hero-photo,
+html.js .hero-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s var(--ease-out),
+    transform 0.6s var(--ease-out);
+}
+
+/* Estado animado (classe adicionada via JS) */
+html.js .hero-photo.hero-visible,
+html.js .hero-item.hero-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger: foto primeiro, depois os itens de texto em sequência */
+html.js .hero-photo { transition-delay: 0ms; }
+html.js .hero-item:nth-child(1) { transition-delay: 100ms; }
+html.js .hero-item:nth-child(2) { transition-delay: 200ms; }
+html.js .hero-item:nth-child(3) { transition-delay: 300ms; }
+html.js .hero-item:nth-child(4) { transition-delay: 400ms; }
+
+/* ── Círculos decorativos: flutuação ambiente ──────────────────────────────── */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-8px) scale(1.02); }
+}
+
+@keyframes float-slower {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(6px) scale(0.98); }
+}
+
+.float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+.float-slower {
+  animation: float-slower 8s ease-in-out infinite;
+}
+
+/* ── Scroll-reveal ─────────────────────────────────────────────────────────── */
+/* Estado inicial: escondido até o IntersectionObserver disparar */
+html.js .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s var(--ease-out),
+    transform 0.6s var(--ease-out);
+}
+
+html.js .reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger em grids: cards de projeto, artigos, blocos do About */
+html.js .reveal[data-stagger="1"] { transition-delay: 60ms; }
+html.js .reveal[data-stagger="2"] { transition-delay: 120ms; }
+html.js .reveal[data-stagger="3"] { transition-delay: 180ms; }
+html.js .reveal[data-stagger="4"] { transition-delay: 240ms; }
+
+/* ── Nav: estado sólido ao rolar ───────────────────────────────────────────── */
+#nav {
+  transition:
+    box-shadow 0.3s var(--ease-out),
+    background-color 0.3s var(--ease-out);
+}
+
+#nav.nav-scrolled {
+  background-color: rgba(250, 249, 246, 0.98);
+  box-shadow: 0 4px 20px rgba(49, 87, 44, 0.08);
+}
+
+/* ── Nav: link ativo (scrollspy) ───────────────────────────────────────────── */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #31572C;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease-out);
+}
+
+.nav-link.nav-active {
+  color: #31572C;
+}
+
+.nav-link.nav-active::after {
+  transform: scaleX(1);
+}
+
+/* ── Microinterações: botões e links sociais ───────────────────────────────── */
+/* Botões principais (Fale comigo, Saiba mais, links sociais, tabs) */
+a[class*="rounded-full"],
+button[class*="rounded-full"] {
+  transition:
+    transform 0.15s var(--ease-tactile),
+    background-color 0.2s var(--ease-tactile),
+    border-color 0.2s var(--ease-tactile),
+    color 0.2s var(--ease-tactile),
+    box-shadow 0.2s var(--ease-tactile);
+}
+
+a[class*="rounded-full"]:hover,
+button[class*="rounded-full"]:hover {
+  transform: scale(1.02);
+}
+
+a[class*="rounded-full"]:active,
+button[class*="rounded-full"]:active {
+  transform: scale(0.97);
+}
+
+/* ── Cards: hover com translateY ───────────────────────────────────────────── */
+/* Cards de projeto e artigo */
+.group[class*="rounded-2xl"] {
+  transition:
+    transform 0.3s var(--ease-out),
+    border-color 0.3s var(--ease-out),
+    box-shadow 0.3s var(--ease-out);
+}
+
+.group[class*="rounded-2xl"]:hover {
+  transform: translateY(-4px);
+}
+
+/* ── Menu mobile: animação de altura/opacity ───────────────────────────────── */
+#mobile-menu {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition:
+    max-height 0.35s var(--ease-out),
+    opacity 0.3s var(--ease-out),
+    padding 0.35s var(--ease-out);
+}
+
+#mobile-menu.menu-open {
+  display: flex;
+  max-height: 400px;
+  opacity: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* ── Skills: crossfade de conteúdo ─────────────────────────────────────────── */
+#skills-content {
+  transition: opacity 0.12s ease-out;
+}
+
+#skills-content.skills-fading {
+  opacity: 0;
+}
+
+/* Badges com stagger no fade-in */
+#skills-content .skill-badge {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: skill-badge-in 0.4s var(--ease-out) forwards;
+}
+
+@keyframes skill-badge-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════════════════
+   PREFERS-REDUCED-MOTION
+   ════════════════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Desativa todas as animações de entrada/reveal */
+  html.js .hero-photo,
+  html.js .hero-item,
+  html.js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  /* Desativa flutuação dos círculos */
+  .float-slow,
+  .float-slower {
+    animation: none;
+  }
+
+  /* Desativa microinterações de scale */
+  a[class*="rounded-full"]:hover,
+  button[class*="rounded-full"]:hover,
+  a[class*="rounded-full"]:active,
+  button[class*="rounded-full"]:active {
+    transform: none;
+  }
+
+  /* Desativa translateY nos cards */
+  .group[class*="rounded-2xl"]:hover {
+    transform: none;
+  }
+
+  /* Desativa animação dos badges de skills */
+  #skills-content .skill-badge {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  /* Menu mobile sem animação */
+  #mobile-menu {
+    transition: none;
+  }
+}
