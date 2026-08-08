@@ -1,0 +1,10 @@
+{
+  "description": "Connect with aspiring developers and creatives through a platform that fosters learning, collaboration, and sharing of knowledge in technology and art.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
