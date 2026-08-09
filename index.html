@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="min-h-screen bg-[#FAF9F6]">
@@ -71,18 +71,9 @@
       <!-- ═══ Hero ═══ -->
       <section id="hero" class="pt-28 pb-20 px-6 max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          <!-- Photo placeholder -->
-          <div class="relative hero-photo">
-            <div class="aspect-[3/4] max-w-sm mx-auto lg:mx-0 rounded-2xl border-2 border-[#90A955]/40 bg-[#ECF39E]/30 overflow-hidden flex items-end justify-center">
-              <div class="w-full h-full bg-gradient-to-br from-[#ECF39E]/50 via-[#90A955]/20 to-[#40916C]/30 flex items-center justify-center">
-                <div class="text-center opacity-40">
-                  <div class="w-24 h-24 rounded-full border-2 border-[#40916C] mx-auto mb-4 flex items-center justify-center">
-                    <span class="text-4xl text-[#40916C]">CB</span>
-                  </div>
-                  <p class="text-[#40916C] text-sm font-medium tracking-wider uppercase">Foto</p>
-                </div>
-              </div>
-            </div>
+          <!-- Photo -->
+          <div class="relative hero-photo flex items-center justify-center lg:self-center">
+            <img src="img/heroimage.png" alt="Foto de Cesar Batista" class="w-full max-w-sm lg:max-w-md" />
             <!-- Decorative accent -->
             <div class="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-[#ECF39E] -z-10 lg:block hidden float-slow"></div>
             <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#90A955]/30 -z-10 lg:block hidden float-slower"></div>
@@ -103,19 +94,19 @@
 
             <!-- Social links -->
             <div class="hero-item flex gap-3">
-              <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all"><!-- TODO: link real -->
+              <a href="https://github.com/CaesarKairos" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
                 </svg>
                 <span>GitHub</span>
               </a>
-              <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all"><!-- TODO: link real -->
+              <a href="https://www.linkedin.com/in/cesarbatista01000011/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
                 <span>LinkedIn</span>
               </a>
-              <a href="#contato" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all">
+              <a href="mailto:cesarbatistasantos08@gmail.com" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -193,14 +184,10 @@
                 Sobre<br />mim
               </h2>
               <div class="mt-6 flex items-center gap-3 text-[#90A955]">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2C8 2 5 5.5 5 9c0 5 3 9 7 9s7-4 7-9c0-3.5-3-7-7-7z" />
-                  <ellipse cx="9" cy="10" rx="1.5" ry="2" fill="currentColor" stroke="none" />
-                  <ellipse cx="15" cy="10" rx="1.5" ry="2" fill="currentColor" stroke="none" />
-                  <path d="M9.5 14.5s.9 1 2.5 1 2.5-1 2.5-1" />
-                  <path d="M5 9 2 7M19 9l3-2" />
+                <svg width="28" height="28" viewBox="0 0 17 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.014,0.143 C5.159,0.143 2.031,3.122 2.031,6.794 C2.031,10.469 7.209,16 9.014,16 C10.822,16 16,10.469 16,6.794 C16,3.122 12.873,0.143 9.014,0.143 L9.014,0.143 Z M7.895,10.895 C7.579,11.213 6.481,10.624 5.447,9.574 C4.411,8.528 3.829,7.42 4.145,7.1 C4.46,6.779 5.557,7.369 6.592,8.417 C7.625,9.465 8.211,10.572 7.895,10.895 L7.895,10.895 Z M10.114,10.887 C9.794,10.567 10.384,9.461 11.435,8.414 C12.484,7.367 13.593,6.778 13.915,7.1 C14.235,7.418 13.644,8.524 12.595,9.57 C11.545,10.617 10.434,11.204 10.114,10.887 L10.114,10.887 Z" fill="currentColor" />
                 </svg>
-                <span class="text-sm font-medium opacity-80">Cesar Augusto Batista dos Santos</span>
+                <span class="text-sm font-medium opacity-80">César Augusto Batista dos Santos</span>
               </div>
             </div>
 
@@ -270,10 +257,10 @@
                 <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">APIs REST</span>
               </div>
               <div class="flex gap-3 pt-2 border-t border-[#90A955]/20">
-                <a href="#" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"><!-- TODO: link real -->
+                <a href="#" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"><!-- TODO: link página de detalhes -->
                   Saiba mais
                 </a>
-                <a href="#" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors"><!-- TODO: link real -->
+                <a href="https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
                   </svg>
@@ -304,10 +291,10 @@
                 <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">MongoDB</span>
               </div>
               <div class="flex gap-3 pt-2 border-t border-[#90A955]/20">
-                <a href="#" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"><!-- TODO: link real -->
+                <a href="#" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"><!-- TODO: link página de detalhes -->
                   Saiba mais
                 </a>
-                <a href="#" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors"><!-- TODO: link real -->
+                <a href="https://github.com/CaesarKairos/Moovibe" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
                   </svg>
@@ -370,7 +357,7 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <a href="#" target="_blank" rel="noopener noreferrer" class="reveal group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="1"><!-- TODO: link real -->
+            <a href="https://caesarkairos.substack.com/p/a-urgencia-da-regulamentacao-da-internet" target="_blank" rel="noopener noreferrer" class="reveal group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="1">
               <div class="flex items-start justify-between gap-4 mb-3">
                 <span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full">Substack</span>
                 <span class="text-[#90A955] opacity-60 group-hover:opacity-100 transition-opacity">
@@ -381,9 +368,9 @@
                   </svg>
                 </span>
               </div>
-              <h3 class="display-font text-xl font-semibold text-[#31572C] mb-2 group-hover:text-[#40916C] transition-colors leading-snug">Como a arte molda o que imaginamos antes de ver</h3>
-              <p class="text-sm text-[#31572C]/65 leading-relaxed mb-4">Sobre aliens estereotipados, percepção coletiva e o poder das representações criadas décadas atrás.</p>
-              <span class="text-xs text-[#90A955] font-medium">Em breve</span>
+              <h3 class="display-font text-xl font-semibold text-[#31572C] mb-2 group-hover:text-[#40916C] transition-colors leading-snug">A urgência da regulamentação da Internet brasileira diante da normalização do crime e do assédio nas redes sociais</h3>
+              <p class="text-sm text-[#31572C]/65 leading-relaxed mb-4">Quando o virtual reproduz o real: violência, impunidade e a urgência de leis eficazes.</p>
+              <span class="text-xs text-[#90A955] font-medium">Leia no Substack</span>
             </a>
 
             <a href="#" target="_blank" rel="noopener noreferrer" class="reveal group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="2"><!-- TODO: link real -->
@@ -419,19 +406,19 @@
           </div>
 
           <div class="reveal flex flex-wrap justify-center gap-4 mb-16">
-            <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all"><!-- TODO: link real -->
+            <a href="https://github.com/CaesarKairos" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
               </svg>
               <span>GitHub</span>
             </a>
-            <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all"><!-- TODO: link real -->
+            <a href="https://www.linkedin.com/in/cesarbatista01000011/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
               <span>LinkedIn</span>
             </a>
-            <a href="mailto:contato@example.com" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all"><!-- TODO: link real -->
+            <a href="mailto:cesarbatistasantos08@gmail.com" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect width="20" height="16" x="2" y="4" rx="2" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -452,6 +439,6 @@
     </div>
 
     <!-- Script -->
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

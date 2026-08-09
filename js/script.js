@@ -176,7 +176,7 @@ function renderSkills(tab) {
       .map((item, i) => {
         const variantClass = skillVariant[tab] || "bg-[#90A955]/20 text-[#31572C]";
         const delay = i * 40; // stagger de 40ms entre badges
-        return `<span class="skill-badge inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide ${variantClass}" style="animation-delay:${delay}ms">${item}</span>`;
+        return `<span class="skill-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium tracking-wide ${variantClass}" style="animation-delay:${delay}ms">${item}</span>`;
       })
       .join("");
 
