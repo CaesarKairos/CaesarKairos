@@ -185,6 +185,125 @@ function renderSkills(tab) {
   }, 120);
 }
 
+function renderArticleCard(article, staggerIndex) {
+  const isExternal = article.url && article.url !== "#";
+  const safeStagger = Math.min(staggerIndex, 4);
+  const linkAttributes = isExternal
+    ? `href="${article.url}" target="_blank" rel="noopener noreferrer"`
+    : `href="#" onclick="event.preventDefault()" aria-disabled="true"`;
+  const footerText = isExternal ? `Leia em ${article.source}` : "Em breve";
+
+  return `
+    <a ${linkAttributes} class="reveal group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="${safeStagger}">
+      <div class="flex items-start justify-between gap-4 mb-3">
+        <span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full">${article.source}</span>
+        <span class="text-[#90A955] opacity-60 group-hover:opacity-100 transition-opacity" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" x2="21" y1="14" y2="3" />
+          </svg>
+        </span>
+      </div>
+      <h3 class="display-font text-xl font-semibold text-[#31572C] mb-2 group-hover:text-[#40916C] transition-colors leading-snug">${article.title}</h3>
+      <p class="text-sm text-[#31572C]/65 leading-relaxed mb-4">${article.excerpt}</p>
+      <span class="text-xs text-[#90A955] font-medium">${footerText}</span>
+    </a>`;
+}
+
+function initArticles() {
+  if (!Array.isArray(articlesData)) return;
+
+  const orderedArticles = [...articlesData].sort((a, b) => b.date.localeCompare(a.date));
+  const previewGrid = document.getElementById("articles-grid");
+  const allGrid = document.getElementById("all-articles-grid");
+
+  if (previewGrid) {
+    previewGrid.innerHTML = orderedArticles
+      .slice(0, 4)
+      .map((article, index) => renderArticleCard(article, index + 1))
+      .join("");
+
+    const moreLink = document.getElementById("more-articles-link");
+    if (moreLink) {
+      moreLink.style.display = orderedArticles.length > 4 ? "inline-flex" : "none";
+    }
+  }
+
+  if (allGrid) {
+    allGrid.innerHTML = orderedArticles
+      .map((article, index) => renderArticleCard(article, index + 1))
+      .join("");
+  }
+}
+
+function renderProjectDetail(project) {
+  const tags = project.tags
+    .map(
+      (tag) => `<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">${tag}</span>`
+    )
+    .join("");
+
+  const features = project.detail.features
+    .map(
+      (item) => `<li class="text-sm leading-relaxed text-[#31572C]/75">${item}</li>`
+    )
+    .join("");
+
+  return `
+    <div class="reveal max-w-4xl mx-auto bg-[#FAF9F6] border border-[#90A955]/25 rounded-3xl p-8 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="1">
+      <div class="mb-8">
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Projeto</p>
+        <h1 class="display-font text-5xl font-bold text-[#31572C] leading-tight">${project.name}</h1>
+        <p class="text-xl text-[#40916C] font-medium mt-4">${project.tagline}</p>
+      </div>
+
+      <p class="text-sm text-[#31572C]/75 leading-relaxed mb-8">${project.detail.summary}</p>
+
+      <div class="grid gap-8 lg:grid-cols-[1.4fr_1fr] mb-8">
+        <div>
+          <h2 class="text-lg font-semibold text-[#31572C] mb-4">O que o projeto faz</h2>
+          <ul class="space-y-3">${features}</ul>
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold text-[#31572C] mb-4">Tecnologias</h2>
+          <div class="flex flex-wrap gap-2">${tags}</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
+          Ver no GitHub
+        </a>
+        <a href="index.html#projetos" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#90A955]/40 bg-white text-[#31572C] text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
+          ← Voltar pro portfólio
+        </a>
+      </div>
+    </div>`;
+}
+
+function renderProjectNotFound() {
+  return `
+    <div class="reveal max-w-3xl mx-auto bg-[#FAF9F6] border border-[#90A955]/25 rounded-3xl p-8 text-center" data-stagger="1">
+      <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Projeto</p>
+      <h1 class="display-font text-4xl font-bold text-[#31572C] leading-tight mb-4">Projeto não encontrado</h1>
+      <p class="text-sm text-[#31572C]/75 leading-relaxed mb-8">O slug informado não corresponde a nenhum projeto existente. Volte ao portfólio para continuar navegando.</p>
+      <a href="index.html#projetos" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#90A955]/40 bg-white text-[#31572C] text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
+        ← Voltar para o portfólio
+      </a>
+    </div>`;
+}
+
+function initProjectDetail() {
+  const detailContainer = document.getElementById("project-detail");
+  if (!detailContainer) return;
+
+  const slug = new URLSearchParams(window.location.search).get("slug");
+  const project = projectsData.find((item) => item.id === slug);
+
+  detailContainer.innerHTML = project ? renderProjectDetail(project) : renderProjectNotFound();
+}
+
 // ─── Skills: troca de aba ─────────────────────────────────────────────────────
 function initSkillsTabs() {
   const tabs = document.querySelectorAll(".skill-tab");
@@ -214,6 +333,8 @@ function initSkillsTabs() {
 // ─── Init ─────────────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
   initHeroEntrance();
+  initArticles();
+  initProjectDetail();
   initScrollReveal();
   initNavScroll();
   initScrollSpy();

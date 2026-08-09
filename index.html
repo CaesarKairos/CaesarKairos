@@ -257,7 +257,7 @@
                 <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">APIs REST</span>
               </div>
               <div class="flex gap-3 pt-2 border-t border-[#90A955]/20">
-                <a href="#" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"><!-- TODO: link página de detalhes -->
+                <a href="projeto.html?slug=bibi" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block">
                   Saiba mais
                 </a>
                 <a href="https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors">
@@ -291,7 +291,7 @@
                 <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">MongoDB</span>
               </div>
               <div class="flex gap-3 pt-2 border-t border-[#90A955]/20">
-                <a href="#" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"><!-- TODO: link página de detalhes -->
+                <a href="projeto.html?slug=moovibe" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block">
                   Saiba mais
                 </a>
                 <a href="https://github.com/CaesarKairos/Moovibe" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors">
@@ -356,37 +356,11 @@
             <h2 class="display-font text-5xl font-bold text-[#31572C] leading-tight">Artigos</h2>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <a href="https://caesarkairos.substack.com/p/a-urgencia-da-regulamentacao-da-internet" target="_blank" rel="noopener noreferrer" class="reveal group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="1">
-              <div class="flex items-start justify-between gap-4 mb-3">
-                <span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full">Substack</span>
-                <span class="text-[#90A955] opacity-60 group-hover:opacity-100 transition-opacity">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" x2="21" y1="14" y2="3" />
-                  </svg>
-                </span>
-              </div>
-              <h3 class="display-font text-xl font-semibold text-[#31572C] mb-2 group-hover:text-[#40916C] transition-colors leading-snug">A urgência da regulamentação da Internet brasileira diante da normalização do crime e do assédio nas redes sociais</h3>
-              <p class="text-sm text-[#31572C]/65 leading-relaxed mb-4">Quando o virtual reproduz o real: violência, impunidade e a urgência de leis eficazes.</p>
-              <span class="text-xs text-[#90A955] font-medium">Leia no Substack</span>
-            </a>
+          <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
 
-            <a href="#" target="_blank" rel="noopener noreferrer" class="reveal group block bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="2"><!-- TODO: link real -->
-              <div class="flex items-start justify-between gap-4 mb-3">
-                <span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full">Substack</span>
-                <span class="text-[#90A955] opacity-60 group-hover:opacity-100 transition-opacity">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" x2="21" y1="14" y2="3" />
-                  </svg>
-                </span>
-              </div>
-              <h3 class="display-font text-xl font-semibold text-[#31572C] mb-2 group-hover:text-[#40916C] transition-colors leading-snug">Programar é transformar ideias em possibilidades</h3>
-              <p class="text-sm text-[#31572C]/65 leading-relaxed mb-4">Reflexão sobre como a programação e a inteligência artificial estão tornando o conhecimento mais acessível.</p>
-              <span class="text-xs text-[#90A955] font-medium">Em breve</span>
+          <div class="mt-8">
+            <a id="more-articles-link" href="artigos.html" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#90A955]/40 text-[#31572C] bg-white text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
+              Ver mais artigos
             </a>
           </div>
         </div>
@@ -438,7 +412,8 @@
 
     </div>
 
-    <!-- Script -->
+    <!-- Data and scripts -->
+    <script src="js/data.js" defer></script>
     <script src="js/script.js" defer></script>
   </body>
 </html>

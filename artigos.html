@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos os artigos — Cesar Batista</title>
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Fraunces + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="min-h-screen bg-[#FAF9F6]">
+      <nav id="nav" class="fixed top-0 left-0 right-0 z-50 bg-[#FAF9F6]/90 backdrop-blur-sm border-b border-[#90A955]/20 nav-solid">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+          <a href="index.html#hero" class="display-font text-[#31572C] font-semibold text-lg tracking-tight hover:text-[#40916C] transition-colors">Caesar Kairos</a>
+
+          <div class="hidden md:flex items-center gap-8">
+            <a href="index.html#sobre" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="sobre">Sobre</a>
+            <a href="index.html#projetos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="projetos">Projetos</a>
+            <a href="index.html#skills" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="skills">Skills</a>
+            <a href="index.html#artigos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="artigos">Artigos</a>
+            <a href="index.html#contato" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="contato">Contato</a>
+            <a href="mailto:cesarbatistasantos08@gmail.com" class="ml-2 px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">Fale comigo</a>
+          </div>
+
+          <button id="menu-toggle" class="md:hidden text-[#31572C] hover:text-[#40916C] transition-colors" aria-label="Toggle menu">
+            <svg id="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <svg id="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
+              <line x1="18" x2="6" y1="6" y2="18" />
+              <line x1="6" x2="18" y1="6" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden bg-[#FAF9F6] border-t border-[#90A955]/20 px-6 py-4 flex-col gap-4 hidden">
+          <a href="index.html#sobre" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Sobre</a>
+          <a href="index.html#projetos" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Projetos</a>
+          <a href="index.html#skills" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Skills</a>
+          <a href="index.html#artigos" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Artigos</a>
+          <a href="index.html#contato" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Contato</a>
+          <a href="mailto:cesarbatistasantos08@gmail.com" class="px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold text-center hover:bg-[#31572C] transition-colors">Fale comigo</a>
+        </div>
+      </nav>
+
+      <main class="pt-28 pb-20 px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="reveal mb-12" data-stagger="1">
+            <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Escrita e reflexão</p>
+            <h1 class="display-font text-5xl font-bold text-[#31572C] leading-tight">Todos os artigos</h1>
+          </div>
+
+          <div id="all-articles-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+
+          <div class="mt-10">
+            <a href="index.html#artigos" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#90A955]/40 bg-white text-[#31572C] text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
+              ← Voltar para o portfólio
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bg-[#31572C] py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="reveal text-center mb-12" data-stagger="1">
+            <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-4">Vamos conversar</p>
+            <h2 class="display-font text-4xl md:text-5xl font-bold text-[#ECF39E] mb-4 leading-tight">Tem um projeto em mente?</h2>
+            <p class="text-[#FAF9F6]/70 max-w-md mx-auto text-sm leading-relaxed">Estou sempre aberto a novas oportunidades, colaborações e conversas sobre tecnologia, escrita ou ideias.</p>
+          </div>
+
+          <div class="reveal flex flex-wrap justify-center gap-4 mb-16" data-stagger="2">
+            <a href="https://github.com/CaesarKairos" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">GitHub</a>
+            <a href="https://www.linkedin.com/in/cesarbatista01000011/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">LinkedIn</a>
+            <a href="mailto:cesarbatistasantos08@gmail.com" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">E-mail</a>
+          </div>
+
+          <div class="border-t border-[#90A955]/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#90A955]/60">
+            <span>© 2025 Cesar Batista · Caesar Kairos</span>
+            <span class="flex items-center gap-2">Feito com <span class="text-[#ECF39E]">♥</span> e muito café</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/data.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
