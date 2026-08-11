@@ -5,15 +5,15 @@ const articlesData = [
     excerpt: "Quando o virtual reproduz o real: violência, impunidade e a urgência de leis eficazes.",
     url: "https://caesarkairos.substack.com/p/a-urgencia-da-regulamentacao-da-internet",
     source: "Substack",
-    date: "2025-01-01"
+    date: "2025-10-12"
   },
   {
     id: "programar-e-transformar-ideias",
-    title: "Programar é transformar ideias em possibilidades",
-    excerpt: "Reflexão sobre como a programação e a inteligência artificial estão tornando o conhecimento mais acessível.",
+    title: "Nós nunca vimos um alienígena!",
+    excerpt: "Sobre como a arte constrói as imagens com que imaginamos aquilo que não conhecemos, moldando o imaginário comum.",
     url: "#",
     source: "Substack",
-    date: "2025-01-01"
+    date: "#s"
   },
 ];
 
