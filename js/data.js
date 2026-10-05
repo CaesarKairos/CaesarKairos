@@ -38,15 +38,17 @@ const projectsData = [
     id: "moovibe",
     name: "Moovibe",
     tagline: "Música → Filme",
-    description: "Plataforma com IA que recomenda um filme a partir de uma música, cruzando letras, contexto cultural e dados do filme para encontrar a mesma vibe.",
-    tags: ["Next.js", "OpenAI API", "Tailwind CSS", "MongoDB"],
+    description: "Recomendador que transforma a vibe de uma a três músicas em cinema, combinando análise emocional, busca vetorial e um catálogo próprio de filmes.",
+    tags: ["JavaScript", "Cloudflare", "Gemini", "D1", "Vectorize"],
     githubUrl: "https://github.com/CaesarKairos/Moovibe",
+    siteUrl: "https://moovibe.pages.dev/",
     detail: {
-      summary: "Moovibe cruza letras de músicas, contexto cultural e informações de filmes para sugerir longas que compartilham a mesma atmosfera emocional e narrativa, oferecendo uma experiência de descoberta criativa.",
+      summary: "Disponível online, o Moovibe recebe de uma a três músicas, analisa letra e contexto e transforma esse material em um perfil de vibe. A busca combina proximidade vetorial e comparação matemática, sempre dentro de um catálogo cinematográfico próprio; o Gemini atua somente como curador final dos candidatos encontrados.",
       features: [
-        "Recomendações de filmes baseadas em letras e tom musical",
-        "Integração com dados externos para contextualizar artistas e obras",
-        "Interface de busca por música, artista ou gênero para achar a melhor vibe"
+        "Busca por uma a três músicas com análise de letra, contexto e dimensões emocionais",
+        "Recomendação híbrida que une busca vetorial e comparação matemática de vibe",
+        "Curadoria final restrita aos filmes reais recuperados do catálogo próprio",
+        "Pipeline autônomo que descobre, enriquece e indexa novos filmes continuamente"
       ]
     }
   },
