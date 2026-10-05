@@ -272,7 +272,7 @@ function renderProjectDetail(project) {
       </div>
 
       <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-        ${project.siteUrl ? `<a href="${project.siteUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#31572C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#40916C] transition-colors">
+        ${project.siteUrl ? `<a href="${project.siteUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
           Abrir projeto
         </a>` : ""}
         <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
