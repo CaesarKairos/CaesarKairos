@@ -53,7 +53,7 @@ Mais do que acumular tecnologias, gosto de usá-las para construir projetos com 
 
 **Biblioteca Inteligente**
 
-Sistema feito para facilitar o gerenciamento de bibliotecas escolares — controle de acervo, empréstimos, devoluções e outras operações reunidas em um só lugar.
+Sistema para gerenciamento de bibliotecas físicas escolares, reunindo **acervo, circulação, leitores, agenda e gestão** em uma aplicação desktop que também pode atender leitores pelo navegador. A evolução atual inclui contas individuais, convites, reservas, notificações, importação por CSV e backup.
 
 <a href="https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente"><img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório BIBI"></a>
 
@@ -66,6 +66,16 @@ Sistema feito para facilitar o gerenciamento de bibliotecas escolares — contro
 Recomendador que transforma a vibe de uma a três músicas em cinema, combinando análise emocional, busca vetorial e um catálogo próprio de filmes.
 
 <a href="https://github.com/CaesarKairos/Moovibe"><img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório Moovibe"></a> <a href="https://moovibe.pages.dev/"><img src="https://img.shields.io/badge/ACESSAR-40916C?style=flat-square&logo=cloudflarepages&logoColor=FAF9F6" alt="Acessar Moovibe"></a>
+
+<br /><br />
+
+### Judge My Letterboxd
+
+**Seu gosto cinematográfico será julgado.**
+
+Experiência interativa que transforma o **export da conta do Letterboxd** em um julgamento cinematográfico personalizado. O sistema analisa filmes, notas, reviews, rewatches, listas, tags e outros padrões da conta para construir uma narrativa conduzida por IA — com as evidências reais aparecendo na própria apresentação.
+
+<a href="https://github.com/CaesarKairos/Judge-my-Letterboxd"><img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório Judge My Letterboxd"></a> <a href="https://judge-my-letterboxd.pages.dev/"><img src="https://img.shields.io/badge/ACESSAR-40916C?style=flat-square&logo=cloudflarepages&logoColor=FAF9F6" alt="Acessar Judge My Letterboxd"></a>
 
 <br /><br />
 

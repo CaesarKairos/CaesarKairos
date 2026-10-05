@@ -11,8 +11,14 @@
     <!-- Google Fonts: Fraunces + Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Site config: define siteConfig.showArticles e aplica .articles-hidden -->
     <script src="js/config.js"></script>
@@ -22,6 +28,7 @@
         if (siteConfig.showArticles === false) {
           document.documentElement.classList.add("articles-hidden");
         }
+
         // Abas de categorias de Skills listadas em hiddenSkillCategories
         (siteConfig.hiddenSkillCategories || []).forEach(function (category) {
           document.documentElement.classList.add(
@@ -37,38 +44,108 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon-alien.svg" />
   </head>
+
   <body>
     <div class="min-h-screen bg-[#FAF9F6]">
 
       <!-- ═══ Nav ═══ -->
-      <nav id="nav" class="fixed top-0 left-0 right-0 z-50 bg-[#FAF9F6]/90 backdrop-blur-sm border-b border-[#90A955]/20 nav-solid">
+      <nav
+        id="nav"
+        class="fixed top-0 left-0 right-0 z-50 bg-[#FAF9F6]/90 backdrop-blur-sm border-b border-[#90A955]/20 nav-solid"
+      >
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#hero" class="display-font text-[#31572C] font-semibold text-lg tracking-tight hover:text-[#40916C] transition-colors">
+          <a
+            href="#hero"
+            class="display-font text-[#31572C] font-semibold text-lg tracking-tight hover:text-[#40916C] transition-colors"
+          >
             Caesar Kairos
           </a>
 
           <!-- Desktop nav -->
           <div class="hidden md:flex items-center gap-8">
-            <a href="#sobre" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="sobre">Sobre</a>
-            <a href="#projetos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="projetos">Projetos</a>
-            <a href="#skills" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="skills">Skills</a>
-            <a href="#artigos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="artigos" data-articles-link>Artigos</a>
-            <a href="#contato" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="contato">Contato</a>
-            <a href="#contato" class="ml-2 px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
+            <a
+              href="#sobre"
+              class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium"
+              data-section="sobre"
+            >
+              Sobre
+            </a>
+
+            <a
+              href="#projetos"
+              class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium"
+              data-section="projetos"
+            >
+              Projetos
+            </a>
+
+            <a
+              href="#skills"
+              class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium"
+              data-section="skills"
+            >
+              Skills
+            </a>
+
+            <a
+              href="#artigos"
+              class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium"
+              data-section="artigos"
+              data-articles-link
+            >
+              Artigos
+            </a>
+
+            <a
+              href="#contato"
+              class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium"
+              data-section="contato"
+            >
+              Contato
+            </a>
+
+            <a
+              href="#contato"
+              class="ml-2 px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors"
+            >
               Fale comigo
             </a>
           </div>
 
           <!-- Mobile toggle -->
-          <button id="menu-toggle" class="md:hidden text-[#31572C] hover:text-[#40916C] transition-colors" aria-label="Toggle menu">
-            <!-- IconMenu -->
-            <svg id="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <button
+            id="menu-toggle"
+            class="md:hidden text-[#31572C] hover:text-[#40916C] transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg
+              id="icon-menu"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <line x1="4" x2="20" y1="6" y2="6" />
               <line x1="4" x2="20" y1="12" y2="12" />
               <line x1="4" x2="20" y1="18" y2="18" />
             </svg>
-            <!-- IconClose -->
-            <svg id="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden">
+
+            <svg
+              id="icon-close"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="hidden"
+            >
               <line x1="18" x2="6" y1="6" y2="18" />
               <line x1="6" x2="18" y1="6" y2="18" />
             </svg>
@@ -76,13 +153,50 @@
         </div>
 
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden bg-[#FAF9F6] border-t border-[#90A955]/20 px-6 py-4 flex-col gap-4 hidden">
-          <a href="#sobre" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Sobre</a>
-          <a href="#projetos" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Projetos</a>
-          <a href="#skills" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Skills</a>
-          <a href="#artigos" data-articles-link class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Artigos</a>
-          <a href="#contato" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Contato</a>
-          <a href="#contato" class="px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold text-center hover:bg-[#31572C] transition-colors">
+        <div
+          id="mobile-menu"
+          class="md:hidden bg-[#FAF9F6] border-t border-[#90A955]/20 px-6 py-4 flex-col gap-4 hidden"
+        >
+          <a
+            href="#sobre"
+            class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors"
+          >
+            Sobre
+          </a>
+
+          <a
+            href="#projetos"
+            class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors"
+          >
+            Projetos
+          </a>
+
+          <a
+            href="#skills"
+            class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors"
+          >
+            Skills
+          </a>
+
+          <a
+            href="#artigos"
+            data-articles-link
+            class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors"
+          >
+            Artigos
+          </a>
+
+          <a
+            href="#contato"
+            class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors"
+          >
+            Contato
+          </a>
+
+          <a
+            href="#contato"
+            class="px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold text-center hover:bg-[#31572C] transition-colors"
+          >
             Fale comigo
           </a>
         </div>
@@ -91,113 +205,299 @@
       <!-- ═══ Hero ═══ -->
       <section id="hero" class="pt-28 pb-20 px-6 max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
           <!-- Photo -->
           <div class="relative hero-photo flex items-center justify-center lg:self-center">
-            <img src="img/heroimage.png" alt="Foto de Cesar Batista" class="w-full max-w-sm lg:max-w-md" />
-            <!-- Decorative accent -->
-            <div class="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-[#ECF39E] -z-10 lg:block hidden float-slow"></div>
-            <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#90A955]/30 -z-10 lg:block hidden float-slower"></div>
+            <img
+              src="img/heroimage.png"
+              alt="Foto de Cesar Batista"
+              class="w-full max-w-sm lg:max-w-md"
+            />
+
+            <div
+              class="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-[#ECF39E] -z-10 lg:block hidden float-slow"
+            ></div>
+
+            <div
+              class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#90A955]/30 -z-10 lg:block hidden float-slower"
+            ></div>
           </div>
 
           <!-- Content -->
           <div class="flex flex-col gap-6">
+
             <div class="hero-item">
-              <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Desenvolvedor Full Stack</p>
-              <h1 class="display-font text-6xl lg:text-7xl font-bold text-[#31572C] leading-[0.95] mb-4">
+              <p
+                class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3"
+              >
+                Desenvolvedor Full Stack
+              </p>
+
+              <h1
+                class="display-font text-6xl lg:text-7xl font-bold text-[#31572C] leading-[0.95] mb-4"
+              >
                 Port<em class="not-italic text-[#40916C]">fólio</em>
               </h1>
             </div>
 
-            <p class="hero-item text-base text-[#31572C]/80 leading-relaxed max-w-lg">
-              <strong class="text-[#31572C] font-semibold">Cesar Batista</strong> (Caesar Kairos) — estudante de Desenvolvimento de Sistemas e desenvolvedor Full Stack, com experiência em frontend, backend, APIs, bancos de dados e integração entre serviços e tecnologias.
+            <p
+              class="hero-item text-base text-[#31572C]/80 leading-relaxed max-w-lg"
+            >
+              <strong class="text-[#31572C] font-semibold">
+                Cesar Batista
+              </strong>
+              (Caesar Kairos) — estudante de Desenvolvimento de Sistemas e
+              desenvolvedor Full Stack, com experiência em frontend, backend,
+              APIs, bancos de dados e integração entre serviços e tecnologias.
             </p>
 
             <!-- Social links -->
             <div class="hero-item flex gap-3">
-              <a href="https://github.com/CaesarKairos" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+
+              <a
+                href="https://github.com/CaesarKairos"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                  />
                 </svg>
+
                 <span>GitHub</span>
               </a>
-              <a href="https://www.linkedin.com/in/cesarbatista01000011/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+
+              <a
+                href="https://www.linkedin.com/in/cesarbatista01000011/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
                 </svg>
+
                 <span>LinkedIn</span>
               </a>
-              <a href="mailto:cesarbatistasantos08@gmail.com" class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+              <a
+                href="mailto:cesarbatistasantos08@gmail.com"
+                class="flex items-center gap-2 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#40916C] hover:text-[#FAF9F6] hover:border-[#40916C] transition-all"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
+
                 <span>E-mail</span>
               </a>
             </div>
 
             <!-- Tech stack -->
             <div class="hero-item mt-2 space-y-3">
+
               <!-- Frontend -->
               <div class="flex flex-wrap items-center gap-2">
-                <span class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide">Frontend</span>
+                <span
+                  class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide"
+                >
+                  Frontend
+                </span>
+
                 <div class="flex flex-wrap gap-1.5">
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">HTML</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">CSS</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">JavaScript</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">TypeScript</span>
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]"
+                  >
+                    HTML
+                  </span>
+
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]"
+                  >
+                    CSS
+                  </span>
+
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]"
+                  >
+                    JavaScript
+                  </span>
+
+                  <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]"
+                  >
+                    TypeScript
+                  </span>
                 </div>
               </div>
+
               <!-- Backend -->
               <div class="flex flex-wrap items-center gap-2">
-                <span class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide">Backend</span>
+                <span
+                  class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide"
+                >
+                  Backend
+                </span>
+
                 <div class="flex flex-wrap gap-1.5">
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Python</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Flask</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">FastAPI</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">APIs REST</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">WebSockets</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Cloudflare Workers</span>
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    Python
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    Flask
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    FastAPI
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    APIs REST
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    WebSockets
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    Cloudflare Workers
+                  </span>
                 </div>
               </div>
+
               <!-- Database -->
               <div class="flex flex-wrap items-center gap-2">
-                <span class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide">Database</span>
+                <span
+                  class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide"
+                >
+                  Database
+                </span>
+
                 <div class="flex flex-wrap gap-1.5">
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">SQL</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">SQLite</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">PostgreSQL</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">Cloudflare D1</span>
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">
+                    SQL
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">
+                    SQLite
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">
+                    PostgreSQL
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">
+                    Cloudflare D1
+                  </span>
                 </div>
               </div>
+
               <!-- Tools -->
               <div class="flex flex-wrap items-center gap-2">
-                <span class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide">Tools</span>
+                <span
+                  class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide"
+                >
+                  Tools
+                </span>
+
                 <div class="flex flex-wrap gap-1.5">
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">Git</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">GitHub</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">Vitest</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">Playwright</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">GitHub Actions</span>
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">
+                    Git
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">
+                    GitHub
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">
+                    Vitest
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">
+                    Playwright
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#ECF39E] text-[#31572C]">
+                    GitHub Actions
+                  </span>
                 </div>
               </div>
+
               <!-- AI -->
               <div class="flex flex-wrap items-center gap-2">
-                <span class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide">AI</span>
+                <span
+                  class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide"
+                >
+                  AI
+                </span>
+
                 <div class="flex flex-wrap gap-1.5">
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Gemini API</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Embeddings</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Vectorize</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Prompt Engineering</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Automação</span>
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    Gemini API
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    Embeddings
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    Vectorize
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    Prompt Engineering
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">
+                    Automação
+                  </span>
                 </div>
               </div>
+
               <!-- Game dev -->
               <div class="flex flex-wrap items-center gap-2">
-                <span class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide">Game dev</span>
+                <span
+                  class="text-xs font-semibold text-[#90A955] w-20 shrink-0 tracking-wide"
+                >
+                  Game dev
+                </span>
+
                 <div class="flex flex-wrap gap-1.5">
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">Godot</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">GDScript</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">GDShader</span>
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">
+                    Godot
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">
+                    GDScript
+                  </span>
+
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#40916C]/15 text-[#40916C]">
+                    GDShader
+                  </span>
                 </div>
               </div>
             </div>
@@ -208,53 +508,156 @@
       <!-- ═══ About ═══ -->
       <section id="sobre" class="py-20 px-6 bg-[#31572C]">
         <div class="max-w-6xl mx-auto">
-          <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12 lg:gap-20">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12 lg:gap-20"
+          >
+
             <div class="reveal lg:sticky lg:top-24 lg:self-start">
-              <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Quem sou</p>
-              <h2 class="display-font text-5xl font-bold text-[#ECF39E] leading-tight">
+              <p
+                class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3"
+              >
+                Quem sou
+              </p>
+
+              <h2
+                class="display-font text-5xl font-bold text-[#ECF39E] leading-tight"
+              >
                 Sobre<br />mim
               </h2>
+
               <div class="mt-6 flex items-center gap-3 text-[#90A955]">
-                <svg width="28" height="28" viewBox="0 0 17 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.014,0.143 C5.159,0.143 2.031,3.122 2.031,6.794 C2.031,10.469 7.209,16 9.014,16 C10.822,16 16,10.469 16,6.794 C16,3.122 12.873,0.143 9.014,0.143 L9.014,0.143 Z M7.895,10.895 C7.579,11.213 6.481,10.624 5.447,9.574 C4.411,8.528 3.829,7.42 4.145,7.1 C4.46,6.779 5.557,7.369 6.592,8.417 C7.625,9.465 8.211,10.572 7.895,10.895 L7.895,10.895 Z M10.114,10.887 C9.794,10.567 10.384,9.461 11.435,8.414 C12.484,7.367 13.593,6.778 13.915,7.1 C14.235,7.418 13.644,8.524 12.595,9.57 C11.545,10.617 10.434,11.204 10.114,10.887 L10.114,10.887 Z" fill="currentColor" />
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 17 17"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.014,0.143 C5.159,0.143 2.031,3.122 2.031,6.794 C2.031,10.469 7.209,16 9.014,16 C10.822,16 16,10.469 16,6.794 C16,3.122 12.873,0.143 9.014,0.143 L9.014,0.143 Z M7.895,10.895 C7.579,11.213 6.481,10.624 5.447,9.574 C4.411,8.528 3.829,7.42 4.145,7.1 C4.46,6.779 5.557,7.369 6.592,8.417 C7.625,9.465 8.211,10.572 7.895,10.895 L7.895,10.895 Z M10.114,10.887 C9.794,10.567 10.384,9.461 11.435,8.414 C12.484,7.367 13.593,6.778 13.915,7.1 C14.235,7.418 13.644,8.524 12.595,9.57 C11.545,10.617 10.434,11.204 10.114,10.887 L10.114,10.887 Z"
+                    fill="currentColor"
+                  />
                 </svg>
-                <span class="text-sm font-medium opacity-80">Cesar Augusto Batista dos Santos</span>
+
+                <span class="text-sm font-medium opacity-80">
+                  Cesar Augusto Batista dos Santos
+                </span>
               </div>
             </div>
 
             <div class="space-y-10">
+
               <!-- Bloco 01 -->
               <div class="reveal flex gap-6 group" data-stagger="1">
-                <span class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors">01</span>
+                <span
+                  class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors"
+                >
+                  01
+                </span>
+
                 <div class="border-t border-[#90A955]/20 pt-4 flex-1">
-                  <h3 class="display-font text-xl font-semibold text-[#ECF39E] mb-3">Trajetória</h3>
-                  <p class="text-[#FAF9F6]/75 leading-relaxed text-sm">Meu interesse por programação começou através de vídeos na Internet. O que inicialmente parecia apenas uma área interessante acabou se tornando uma forma de criar coisas que, antes de existirem, eram apenas ideias. Hoje sou estudante de Desenvolvimento de Sistemas e desenvolvedor Full Stack — movido pelo prazer de transformar ideias em algo que realmente funciona, do primeiro código até uma aplicação que possa ser utilizada por alguém.</p>
+                  <h3
+                    class="display-font text-xl font-semibold text-[#ECF39E] mb-3"
+                  >
+                    Trajetória
+                  </h3>
+
+                  <p class="text-[#FAF9F6]/75 leading-relaxed text-sm">
+                    Meu interesse por programação começou através de vídeos na
+                    Internet. O que inicialmente parecia apenas uma área
+                    interessante acabou se tornando uma forma de criar coisas
+                    que, antes de existirem, eram apenas ideias. Hoje sou
+                    estudante de Desenvolvimento de Sistemas e desenvolvedor
+                    Full Stack — movido pelo prazer de transformar ideias em
+                    algo que realmente funciona, do primeiro código até uma
+                    aplicação que possa ser utilizada por alguém.
+                  </p>
                 </div>
               </div>
+
               <!-- Bloco 02 -->
               <div class="reveal flex gap-6 group" data-stagger="2">
-                <span class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors">02</span>
+                <span
+                  class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors"
+                >
+                  02
+                </span>
+
                 <div class="border-t border-[#90A955]/20 pt-4 flex-1">
-                  <h3 class="display-font text-xl font-semibold text-[#ECF39E] mb-3">O que me move</h3>
-                  <p class="text-[#FAF9F6]/75 leading-relaxed text-sm">Apesar de atuar em uma área de exatas, me considero profundamente ligado às humanas. Escrevo livros e histórias, tenho interesse por psicologia, arte, cinema, literatura e mitologia. Acredito que tecnologia deve ser acessível — não só no uso, mas no conhecimento para compreendê-la. Com o avanço da inteligência artificial, essa possibilidade de transformar ideias em ferramentas está se tornando cada vez mais real.</p>
+                  <h3
+                    class="display-font text-xl font-semibold text-[#ECF39E] mb-3"
+                  >
+                    O que me move
+                  </h3>
+
+                  <p class="text-[#FAF9F6]/75 leading-relaxed text-sm">
+                    Apesar de atuar em uma área de exatas, me considero
+                    profundamente ligado às humanas. Escrevo livros e histórias,
+                    tenho interesse por psicologia, arte, cinema, literatura e
+                    mitologia. Acredito que tecnologia deve ser acessível — não
+                    só no uso, mas no conhecimento para compreendê-la. Com o
+                    avanço da inteligência artificial, essa possibilidade de
+                    transformar ideias em ferramentas está se tornando cada vez
+                    mais real.
+                  </p>
                 </div>
               </div>
+
               <!-- Bloco 03 -->
               <div class="reveal flex gap-6 group" data-stagger="3">
-                <span class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors">03</span>
+                <span
+                  class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors"
+                >
+                  03
+                </span>
+
                 <div class="border-t border-[#90A955]/20 pt-4 flex-1">
-                  <h3 class="display-font text-xl font-semibold text-[#ECF39E] mb-3">Fora do código</h3>
-                  <p class="text-[#FAF9F6]/75 leading-relaxed text-sm">Gosto muito de cinema, especialmente de filmes que provavelmente passariam despercebidos em qualquer outra circunstância. Também gosto de jogos 2D, como OneShot, e de Minecraft — mesmo sem nunca ter chegado a zerá-lo. Amo a cor verde e aliens estereotipados do cinema: para mim, eles são um exemplo de como a arte molda a percepção coletiva. Uma representação criada décadas atrás que continua definindo o que imaginamos quando pensamos em algo que sequer sabemos se existe.</p>
+                  <h3
+                    class="display-font text-xl font-semibold text-[#ECF39E] mb-3"
+                  >
+                    Fora do código
+                  </h3>
+
+                  <p class="text-[#FAF9F6]/75 leading-relaxed text-sm">
+                    Gosto muito de cinema, especialmente de filmes que
+                    provavelmente passariam despercebidos em qualquer outra
+                    circunstância. Também gosto de jogos 2D, como OneShot, e de
+                    Minecraft — mesmo sem nunca ter chegado a zerá-lo. Amo a cor
+                    verde e aliens estereotipados do cinema: para mim, eles são
+                    um exemplo de como a arte molda a percepção coletiva. Uma
+                    representação criada décadas atrás que continua definindo o
+                    que imaginamos quando pensamos em algo que sequer sabemos se
+                    existe.
+                  </p>
                 </div>
               </div>
+
               <!-- Bloco 04 -->
               <div class="reveal flex gap-6 group" data-stagger="4">
-                <span class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors">04</span>
+                <span
+                  class="display-font text-[#90A955]/30 text-4xl font-bold leading-none shrink-0 select-none group-hover:text-[#90A955]/60 transition-colors"
+                >
+                  04
+                </span>
+
                 <div class="border-t border-[#90A955]/20 pt-4 flex-1">
-                  <h3 class="display-font text-xl font-semibold text-[#ECF39E] mb-3">Visão de futuro</h3>
-                  <p class="text-[#FAF9F6]/75 leading-relaxed text-sm">Quero ser alguém a quem outras pessoas possam recorrer quando precisarem de ajuda — em desenvolvimento, na escrita ou na arte. Da mesma forma que comunidades tornaram possível que eu chegasse até aqui, quero poder compartilhar esse caminho. Mais do que acumular conhecimento, quero ser capaz de transmiti-lo.</p>
+                  <h3
+                    class="display-font text-xl font-semibold text-[#ECF39E] mb-3"
+                  >
+                    Visão de futuro
+                  </h3>
+
+                  <p class="text-[#FAF9F6]/75 leading-relaxed text-sm">
+                    Quero ser alguém a quem outras pessoas possam recorrer
+                    quando precisarem de ajuda — em desenvolvimento, na escrita
+                    ou na arte. Da mesma forma que comunidades tornaram possível
+                    que eu chegasse até aqui, quero poder compartilhar esse
+                    caminho. Mais do que acumular conhecimento, quero ser capaz
+                    de transmiti-lo.
+                  </p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -263,95 +666,308 @@
       <!-- ═══ Projects ═══ -->
       <section id="projetos" class="py-20 px-6">
         <div class="max-w-6xl mx-auto">
+
           <div class="flex items-end justify-between mb-12 flex-wrap gap-4">
             <div>
-              <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">O que construí</p>
-              <h2 class="display-font text-5xl font-bold text-[#31572C] leading-tight">Projetos</h2>
+              <p
+                class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3"
+              >
+                O que construí
+              </p>
+
+              <h2
+                class="display-font text-5xl font-bold text-[#31572C] leading-tight"
+              >
+                Projetos
+              </h2>
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
             <!-- BIBI -->
-            <div class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="1">
+            <div
+              class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300"
+              data-stagger="1"
+            >
               <div>
                 <div class="flex items-start justify-between gap-4 mb-2">
-                  <h3 class="display-font text-2xl font-bold text-[#31572C] leading-tight">BIBI</h3>
-                  <span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full shrink-0">projeto escolar</span>
+                  <h3
+                    class="display-font text-2xl font-bold text-[#31572C] leading-tight"
+                  >
+                    BIBI
+                  </h3>
+
+                  <span
+                    class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full shrink-0"
+                  >
+                    projeto escolar
+                  </span>
                 </div>
-                <p class="text-sm text-[#40916C] font-medium mb-3">Biblioteca Inteligente</p>
-                <p class="text-sm text-[#31572C]/70 leading-relaxed">Sistema feito para facilitar o gerenciamento de bibliotecas escolares — controle de acervo, empréstimos, devoluções e relatórios, tudo em um só lugar.</p>
+
+                <p class="text-sm text-[#40916C] font-medium mb-3">
+                  Biblioteca Inteligente
+                </p>
+
+                <p class="text-sm text-[#31572C]/70 leading-relaxed">
+                  Sistema para gerenciamento de bibliotecas físicas escolares,
+                  reunindo acervo, circulação, leitores, agenda e gestão em uma
+                  aplicação desktop com acesso complementar pelo navegador.
+                </p>
               </div>
+
               <div class="flex flex-wrap gap-1.5 mt-auto">
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Node.js</span>
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">React</span>
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">MongoDB</span>
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">APIs REST</span>
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  Python
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  Flask
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  SQLite
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  PyWebView
+                </span>
               </div>
-              <div class="flex gap-3 pt-2 border-t border-[#90A955]/20">
-                <a href="projeto.html?slug=bibi" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block">
+
+              <div
+                class="flex flex-wrap gap-3 pt-2 border-t border-[#90A955]/20"
+              >
+                <a
+                  href="projeto.html?slug=bibi"
+                  class="flex-1 min-w-[120px] py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"
+                >
                   Saiba mais
                 </a>
-                <a href="https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+
+                <a
+                  href="https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                    />
                   </svg>
+
                   <span>GitHub</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" x2="21" y1="14" y2="3" />
-                  </svg>
                 </a>
               </div>
             </div>
 
             <!-- Moovibe -->
-            <div class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="2">
+            <div
+              class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300"
+              data-stagger="2"
+            >
               <div>
                 <div class="flex items-start justify-between gap-4 mb-2">
-                  <h3 class="display-font text-2xl font-bold text-[#31572C] leading-tight">Moovibe</h3>
-                  <span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full shrink-0">projeto próprio</span>
+                  <h3
+                    class="display-font text-2xl font-bold text-[#31572C] leading-tight"
+                  >
+                    Moovibe
+                  </h3>
+
+                  <span
+                    class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full shrink-0"
+                  >
+                    projeto próprio
+                  </span>
                 </div>
-                <p class="text-sm text-[#40916C] font-medium mb-3">Música → Filme</p>
-                <p class="text-sm text-[#31572C]/70 leading-relaxed">Recomendador que transforma a vibe de uma a três músicas em cinema, combinando análise emocional, busca vetorial e um catálogo próprio de filmes.</p>
+
+                <p class="text-sm text-[#40916C] font-medium mb-3">
+                  Música → Filme
+                </p>
+
+                <p class="text-sm text-[#31572C]/70 leading-relaxed">
+                  Recomendador que transforma a vibe de uma a três músicas em
+                  cinema, combinando análise emocional, busca vetorial e um
+                  catálogo próprio de filmes.
+                </p>
               </div>
+
               <div class="flex flex-wrap gap-1.5 mt-auto">
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Cloudflare</span>
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Gemini</span>
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">D1</span>
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">Vectorize</span>
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  Cloudflare
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  Gemini
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  D1
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  Vectorize
+                </span>
               </div>
-              <div class="flex gap-3 pt-2 border-t border-[#90A955]/20">
-                <a href="projeto.html?slug=moovibe" class="flex-1 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block">
+
+              <div
+                class="flex flex-wrap gap-3 pt-2 border-t border-[#90A955]/20"
+              >
+                <a
+                  href="projeto.html?slug=moovibe"
+                  class="flex-1 min-w-[120px] py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"
+                >
                   Saiba mais
                 </a>
-                <a href="https://github.com/CaesarKairos/Moovibe" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:border-[#40916C] transition-colors">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
-                  </svg>
-                  <span>GitHub</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" x2="21" y1="14" y2="3" />
-                  </svg>
+
+                <a
+                  href="https://moovibe.pages.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#ECF39E] hover:border-[#40916C] transition-colors"
+                >
+                  Abrir
+                </a>
+
+                <a
+                  href="https://github.com/CaesarKairos/Moovibe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#ECF39E] hover:border-[#40916C] transition-colors"
+                >
+                  GitHub
                 </a>
               </div>
             </div>
 
-            <!-- Placeholder 1 -->
-            <div class="reveal bg-[#ECF39E]/20 border border-dashed border-[#90A955]/40 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 min-h-[260px] text-center" data-stagger="3">
-              <div class="w-10 h-10 rounded-full border border-[#90A955]/40 flex items-center justify-center text-[#90A955] text-xl">+</div>
-              <p class="text-sm text-[#90A955] font-medium">Próximo projeto</p>
-              <p class="text-xs text-[#90A955]/60">Em breve</p>
+            <!-- Judge My Letterboxd -->
+            <div
+              class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300"
+              data-stagger="3"
+            >
+              <div>
+                <div class="flex items-start justify-between gap-4 mb-2">
+                  <h3
+                    class="display-font text-2xl font-bold text-[#31572C] leading-tight"
+                  >
+                    Judge My Letterboxd
+                  </h3>
+
+                  <span
+                    class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full shrink-0"
+                  >
+                    projeto próprio
+                  </span>
+                </div>
+
+                <p class="text-sm text-[#40916C] font-medium mb-3">
+                  Seu gosto cinematográfico será julgado
+                </p>
+
+                <p class="text-sm text-[#31572C]/70 leading-relaxed">
+                  Experiência interativa que transforma o export de uma conta
+                  do Letterboxd em um julgamento cinematográfico personalizado,
+                  usando os próprios padrões da conta como evidência.
+                </p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 mt-auto">
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  JavaScript
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  Cloudflare
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  Gemini
+                </span>
+
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]"
+                >
+                  TMDB
+                </span>
+              </div>
+
+              <div
+                class="flex flex-wrap gap-3 pt-2 border-t border-[#90A955]/20"
+              >
+                <a
+                  href="projeto.html?slug=judge-my-letterboxd"
+                  class="flex-1 min-w-[120px] py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors text-center block"
+                >
+                  Saiba mais
+                </a>
+
+                <a
+                  href="https://judge-my-letterboxd.pages.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#ECF39E] hover:border-[#40916C] transition-colors"
+                >
+                  Abrir
+                </a>
+
+                <a
+                  href="https://github.com/CaesarKairos/Judge-my-Letterboxd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#ECF39E] hover:border-[#40916C] transition-colors"
+                >
+                  GitHub
+                </a>
+              </div>
             </div>
 
-            <!-- Placeholder 2 -->
-            <div class="reveal bg-[#ECF39E]/20 border border-dashed border-[#90A955]/40 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 min-h-[260px] text-center" data-stagger="4">
-              <div class="w-10 h-10 rounded-full border border-[#90A955]/40 flex items-center justify-center text-[#90A955] text-xl">+</div>
-              <p class="text-sm text-[#90A955] font-medium">Próximo projeto</p>
-              <p class="text-xs text-[#90A955]/60">Em breve</p>
+            <!-- Placeholder -->
+            <div
+              class="reveal bg-[#ECF39E]/20 border border-dashed border-[#90A955]/40 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 min-h-[260px] text-center"
+              data-stagger="4"
+            >
+              <div
+                class="w-10 h-10 rounded-full border border-[#90A955]/40 flex items-center justify-center text-[#90A955] text-xl"
+              >
+                +
+              </div>
+
+              <p class="text-sm text-[#90A955] font-medium">
+                Próximo projeto
+              </p>
+
+              <p class="text-xs text-[#90A955]/60">
+                Em breve
+              </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -359,38 +975,96 @@
       <!-- ═══ Skills ═══ -->
       <section id="skills" class="py-20 px-6 bg-[#ECF39E]/30">
         <div class="max-w-6xl mx-auto">
+
           <div class="reveal mb-10">
-            <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Ferramentas e saberes</p>
-            <h2 class="display-font text-5xl font-bold text-[#31572C] leading-tight">Skills</h2>
+            <p
+              class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3"
+            >
+              Ferramentas e saberes
+            </p>
+
+            <h2
+              class="display-font text-5xl font-bold text-[#31572C] leading-tight"
+            >
+              Skills
+            </h2>
           </div>
 
           <!-- Tabs -->
           <div class="reveal flex flex-wrap gap-2 mb-8">
-            <button data-tab="Cursos" class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white border border-[#90A955]/30 text-[#40916C] hover:border-[#40916C]">Cursos</button>
-            <button data-tab="Ferramentas" class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white border border-[#90A955]/30 text-[#40916C] hover:border-[#40916C]">Ferramentas</button>
-            <button data-tab="Tecnologias" class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-[#40916C] text-[#FAF9F6]" id="default-tab">Tecnologias</button>
-            <button data-tab="Soft Skills" class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white border border-[#90A955]/30 text-[#40916C] hover:border-[#40916C]">Soft Skills</button>
+            <button
+              data-tab="Cursos"
+              class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white border border-[#90A955]/30 text-[#40916C] hover:border-[#40916C]"
+            >
+              Cursos
+            </button>
+
+            <button
+              data-tab="Ferramentas"
+              class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white border border-[#90A955]/30 text-[#40916C] hover:border-[#40916C]"
+            >
+              Ferramentas
+            </button>
+
+            <button
+              data-tab="Tecnologias"
+              class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-[#40916C] text-[#FAF9F6]"
+              id="default-tab"
+            >
+              Tecnologias
+            </button>
+
+            <button
+              data-tab="Soft Skills"
+              class="skill-tab px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white border border-[#90A955]/30 text-[#40916C] hover:border-[#40916C]"
+            >
+              Soft Skills
+            </button>
           </div>
 
           <!-- Content -->
-          <div id="skills-content" class="flex flex-wrap gap-2 min-h-[80px]">
+          <div
+            id="skills-content"
+            class="flex flex-wrap gap-2 min-h-[80px]"
+          >
             <!-- Tecnologias (default) -->
           </div>
         </div>
       </section>
 
       <!-- ═══ Articles ═══ -->
-      <section id="artigos" data-articles-section class="py-20 px-6">
+      <section
+        id="artigos"
+        data-articles-section
+        class="py-20 px-6"
+      >
         <div class="max-w-6xl mx-auto">
+
           <div class="mb-12">
-            <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Escrita e reflexão</p>
-            <h2 class="display-font text-5xl font-bold text-[#31572C] leading-tight">Artigos</h2>
+            <p
+              class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3"
+            >
+              Escrita e reflexão
+            </p>
+
+            <h2
+              class="display-font text-5xl font-bold text-[#31572C] leading-tight"
+            >
+              Artigos
+            </h2>
           </div>
 
-          <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+          <div
+            id="articles-grid"
+            class="grid grid-cols-1 md:grid-cols-2 gap-6"
+          ></div>
 
           <div class="mt-8">
-            <a id="more-articles-link" href="artigos.html" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#90A955]/40 text-[#31572C] bg-white text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
+            <a
+              id="more-articles-link"
+              href="artigos.html"
+              class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#90A955]/40 text-[#31572C] bg-white text-sm font-semibold hover:bg-[#ECF39E] transition-colors"
+            >
               Ver mais artigos
             </a>
           </div>
@@ -398,42 +1072,104 @@
       </section>
 
       <!-- ═══ Footer ═══ -->
-      <footer id="contato" class="bg-[#31572C] py-16 px-6">
+      <footer
+        id="contato"
+        class="bg-[#31572C] py-16 px-6"
+      >
         <div class="max-w-6xl mx-auto">
+
           <div class="reveal text-center mb-12">
-            <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-4">Vamos conversar</p>
-            <h2 class="display-font text-4xl md:text-5xl font-bold text-[#ECF39E] mb-4 leading-tight">
+            <p
+              class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-4"
+            >
+              Vamos conversar
+            </p>
+
+            <h2
+              class="display-font text-4xl md:text-5xl font-bold text-[#ECF39E] mb-4 leading-tight"
+            >
               Tem um projeto em mente?
             </h2>
-            <p class="text-[#FAF9F6]/70 max-w-md mx-auto text-sm leading-relaxed">
-              Estou sempre aberto a novas oportunidades, colaborações e conversas sobre tecnologia, escrita ou ideias.
+
+            <p
+              class="text-[#FAF9F6]/70 max-w-md mx-auto text-sm leading-relaxed"
+            >
+              Estou sempre aberto a novas oportunidades, colaborações e
+              conversas sobre tecnologia, escrita ou ideias.
             </p>
           </div>
 
-          <div class="reveal flex flex-wrap justify-center gap-4 mb-16">
-            <a href="https://github.com/CaesarKairos" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+          <div
+            class="reveal flex flex-wrap justify-center gap-4 mb-16"
+          >
+            <a
+              href="https://github.com/CaesarKairos"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
               </svg>
+
               <span>GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/cesarbatista01000011/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+
+            <a
+              href="https://www.linkedin.com/in/cesarbatista01000011/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
               </svg>
+
               <span>LinkedIn</span>
             </a>
-            <a href="mailto:cesarbatistasantos08@gmail.com" class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+            <a
+              href="mailto:cesarbatistasantos08@gmail.com"
+              class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#90A955]/40 text-[#ECF39E] text-sm font-medium hover:bg-[#40916C] hover:border-[#40916C] transition-all"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <rect width="20" height="16" x="2" y="4" rx="2" />
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                <path
+                  d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                />
               </svg>
+
               <span>E-mail</span>
             </a>
           </div>
 
-          <div class="border-t border-[#90A955]/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#90A955]/60">
-            <span>© 2025 Cesar Batista · Caesar Kairos</span>
+          <div
+            class="border-t border-[#90A955]/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#90A955]/60"
+          >
+            <span>© 2026 Cesar Batista · Caesar Kairos</span>
           </div>
         </div>
       </footer>
