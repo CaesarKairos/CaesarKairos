@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./img/favicon-alien.svg" width="48" alt="Alien icon" />
+<img src="./img/readme/alien-gradient.svg" width="48" alt="Alien icon" />
 <img src="./img/readme/divider.svg" width="100%" alt="" />
 </div>
 
