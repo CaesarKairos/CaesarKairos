@@ -165,8 +165,22 @@ function initMobileMenu() {
 }
 
 // ─── Skills: render com crossfade ─────────────────────────────────────────────
+// ─── Skills: visibilidade das categorias (js/config.js) ───────────────────────
+// Sem siteConfig definido (config.js não carregado), todas as categorias ficam
+// visíveis.
+function isSkillCategoryVisible(category) {
+  if (typeof siteConfig === "undefined" || !Array.isArray(siteConfig.hiddenSkillCategories)) {
+    return true;
+  }
+  return !siteConfig.hiddenSkillCategories.includes(category);
+}
+
 function renderSkills(tab) {
+  if (!isSkillCategoryVisible(tab)) return;
+
   const container = document.getElementById("skills-content");
+  if (!container) return;
+
   const items = skillsData[tab] || [];
 
   // Fade-out rápido
@@ -316,29 +330,56 @@ function initProjectDetail() {
 }
 
 // ─── Skills: troca de aba ─────────────────────────────────────────────────────
+function setActiveSkillTab(tabs, activeBtn) {
+  const activeClasses = ["bg-[#40916C]", "text-[#FAF9F6]"];
+  const inactiveClasses = ["bg-white", "border", "border-[#90A955]/30", "text-[#40916C]"];
+
+  tabs.forEach((t) => {
+    const isActive = t === activeBtn;
+    activeClasses.forEach((c) => t.classList.toggle(c, isActive));
+    inactiveClasses.forEach((c) => t.classList.toggle(c, !isActive));
+  });
+}
+
 function initSkillsTabs() {
   const tabs = document.querySelectorAll(".skill-tab");
+  if (tabs.length === 0) return; // página sem a seção Skills (artigos/projeto)
+
+  const visibleTabs = Array.from(tabs).filter((btn) =>
+    isSkillCategoryVisible(btn.getAttribute("data-tab"))
+  );
 
   tabs.forEach((btn) => {
+    // Categoria oculta via js/config.js: some com a aba e ignora cliques
+    if (!isSkillCategoryVisible(btn.getAttribute("data-tab"))) {
+      btn.classList.add("hidden");
+      return;
+    }
+
     btn.addEventListener("click", () => {
-      // Remove active class from all tabs
-      tabs.forEach((t) => {
-        t.classList.remove("bg-[#40916C]", "text-[#FAF9F6]");
-        t.classList.add("bg-white", "border", "border-[#90A955]/30", "text-[#40916C]");
-      });
-
-      // Activate clicked tab
-      btn.classList.remove("bg-white", "border", "border-[#90A955]/30", "text-[#40916C]");
-      btn.classList.add("bg-[#40916C]", "text-[#FAF9F6]");
-
-      // Render skills for selected tab
-      const tab = btn.getAttribute("data-tab");
-      renderSkills(tab);
+      setActiveSkillTab(tabs, btn);
+      renderSkills(btn.getAttribute("data-tab"));
     });
   });
 
-  // Render default tab (Tecnologias)
-  renderSkills("Tecnologias");
+  // Sem nenhuma categoria visível, a seção Skills inteira sai do site
+  if (visibleTabs.length === 0) {
+    const section = document.getElementById("skills");
+    if (section) section.classList.add("hidden");
+    document
+      .querySelectorAll('a[href="#skills"], a[href="index.html#skills"]')
+      .forEach((link) => link.classList.add("hidden"));
+    return;
+  }
+
+  // Aba padrão: "Tecnologias" (#default-tab) se visível, senão a 1ª visível
+  const preferred = document.getElementById("default-tab");
+  const defaultTab =
+    preferred && isSkillCategoryVisible(preferred.getAttribute("data-tab"))
+      ? preferred
+      : visibleTabs[0];
+  setActiveSkillTab(tabs, defaultTab);
+  renderSkills(defaultTab.getAttribute("data-tab"));
 }
 
 // ─── Init ─────────────────────────────────────────────────────────────────────

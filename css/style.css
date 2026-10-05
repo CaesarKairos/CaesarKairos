@@ -284,3 +284,15 @@ button[class*="rounded-full"]:active {
 .articles-hidden [data-articles-link] {
   display: none !important;
 }
+
+/* ── Categorias de Skills condicionais ──────────────────────────────────────── */
+/* Controladas por js/config.js → siteConfig.hiddenSkillCategories.
+   O <head> do index.html adiciona `.skill-hidden-<slug>` no <html> (espaço vira
+   hífen) e a aba correspondente some. O js/script.js reforça a ocultação e
+   escolhe a primeira categoria visível como aba padrão. */
+.skill-hidden-Cursos .skill-tab[data-tab="Cursos"],
+.skill-hidden-Ferramentas .skill-tab[data-tab="Ferramentas"],
+.skill-hidden-Tecnologias .skill-tab[data-tab="Tecnologias"],
+.skill-hidden-Soft-Skills .skill-tab[data-tab="Soft Skills"] {
+  display: none !important;
+}
