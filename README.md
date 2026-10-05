@@ -20,7 +20,7 @@ Gosto de transformar ideias em projetos reais — de aplicações web a experime
 
 <br />
 
-<a href="https://caesarkairos.pages.dev/"><img src="https://img.shields.io/badge/VER%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Ver portfólio"></a> <a href="https://www.linkedin.com/in/cesarbatista01000011/"><img src="./img/readme/linkedin-badge.svg" height="28" alt="LinkedIn"></a> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cesarbatistasantos08@gmail.com"><img src="https://img.shields.io/badge/E--MAIL-90A955?style=for-the-badge&logo=gmail&logoColor=31572C" alt="E-mail"></a>
+<a href="https://caesarkairos.pages.dev/"><img src="https://img.shields.io/badge/VER%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Ver portfólio"></a> <a href="https://www.linkedin.com/in/cesarbatista01000011/"><img src="./img/readme/linkedin-badge.svg" height="28" alt="LinkedIn"></a> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cesarbatistasantos08@gmail.com"><img src="https://img.shields.io/badge/E--MAIL-90A955?style=for-the-badge&logo=gmail&logoColor=FAF9F6" alt="E-mail"></a> <a href="https://wa.me/5511951594647"><img src="https://img.shields.io/badge/WHATSAPP-40916C?style=for-the-badge&logo=whatsapp&logoColor=FAF9F6" alt="WhatsApp"></a>
 
 <br clear="right" />
 <br />
