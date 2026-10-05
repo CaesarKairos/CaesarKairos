@@ -259,6 +259,14 @@ function initArticles() {
   }
 }
 
+// ─── Ícones usados nos botões de projeto ──────────────────────────────────────
+const icons = {
+  github: `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>`,
+  externalLink: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>`,
+  arrowRight: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
+  arrowLeft: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>`,
+};
+
 function renderProjectDetail(project) {
   const tags = project.tags
     .map(
@@ -294,14 +302,17 @@ function renderProjectDetail(project) {
       </div>
 
       <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-        ${project.siteUrl ? `<a href="${project.siteUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
-          Abrir projeto
+        ${project.siteUrl ? `<a href="${project.siteUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
+          ${icons.externalLink}
+          <span>Abrir projeto</span>
         </a>` : ""}
-        <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
-          Ver no GitHub
+        <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">
+          ${icons.github}
+          <span>Ver no GitHub</span>
         </a>
-        <a href="index.html#projetos" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#90A955]/40 bg-white text-[#31572C] text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
-          ← Voltar pro portfólio
+        <a href="index.html#projetos" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#90A955]/40 bg-white text-[#31572C] text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
+          ${icons.arrowLeft}
+          <span>Voltar pro portfólio</span>
         </a>
       </div>
     </div>`;
@@ -313,8 +324,9 @@ function renderProjectNotFound() {
       <p class="text-xs font-semibold tracking-[0.2em] uppercase text-[#90A955] mb-3">Projeto</p>
       <h1 class="display-font text-4xl font-bold text-[#31572C] leading-tight mb-4">Projeto não encontrado</h1>
       <p class="text-sm text-[#31572C]/75 leading-relaxed mb-8">O slug informado não corresponde a nenhum projeto existente. Volte ao portfólio para continuar navegando.</p>
-      <a href="index.html#projetos" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#90A955]/40 bg-white text-[#31572C] text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
-        ← Voltar para o portfólio
+      <a href="index.html#projetos" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#90A955]/40 bg-white text-[#31572C] text-sm font-semibold hover:bg-[#ECF39E] transition-colors">
+        ${icons.arrowLeft}
+        <span>Voltar para o portfólio</span>
       </a>
     </div>`;
 }
