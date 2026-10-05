@@ -1,14 +1,16 @@
 <div align="center">
-  <img src="./img/favicon-alien.svg" width="52" alt="Alien icon" />
-</div>
 
-<img align="right" width="340" src="./img/heroimage.png" alt="Cesar Batista — Caesar Kairos" />
+<img src="./img/favicon-alien.svg" width="48" alt="Alien icon" />
+
+</div>
 
 <br />
 
+<img align="right" width="340" src="./img/heroimage.png" alt="Cesar Batista — Caesar Kairos" />
+
 <sub><b>DESENVOLVEDOR FULL STACK</b></sub>
 
-# Portfólio.
+### Portfólio.
 
 **Cesar Batista** — Caesar Kairos.
 
@@ -18,13 +20,22 @@ Gosto de transformar ideias em projetos reais — de aplicações web a experime
 
 <br />
 
-[![Portfólio](https://img.shields.io/badge/VER%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6)](https://caesarkairos.pages.dev/)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-31572C?style=for-the-badge&logo=linkedin&logoColor=ECF39E)](https://www.linkedin.com/in/cesarbatista01000011/)
-[![Email](https://img.shields.io/badge/E--MAIL-90A955?style=for-the-badge&logo=gmail&logoColor=31572C)](mailto:cesarbatistasantos08@gmail.com)
+<a href="https://caesarkairos.pages.dev/">
+  <img src="https://img.shields.io/badge/VER%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Ver portfólio" />
+</a>
+<a href="https://www.linkedin.com/in/cesarbatista01000011/">
+  <img src="https://img.shields.io/badge/LINKEDIN-31572C?style=for-the-badge&logo=linkedin&logoColor=ECF39E" alt="LinkedIn" />
+</a>
+<a href="mailto:cesarbatistasantos08@gmail.com">
+  <img src="https://img.shields.io/badge/E--MAIL-90A955?style=for-the-badge&logo=gmail&logoColor=31572C" alt="E-mail" />
+</a>
 
-<br clear="right"/>
+<br clear="right" />
+<br />
 
----
+<img src="./img/readme/divider.svg" width="100%" alt="" />
+
+<br />
 
 <sub><b>QUEM SOU</b></sub>
 
@@ -36,36 +47,61 @@ Hoje, meus projetos passam por desenvolvimento web **Full Stack**, bancos de dad
 
 Mais do que acumular tecnologias, gosto de usá-las para construir projetos com **identidade própria**, seja resolvendo um problema real ou explorando uma ideia simplesmente porque ela parecia interessante demais para ficar só no papel.
 
----
+<br />
+
+<img src="./img/readme/divider.svg" width="100%" alt="" />
+
+<br />
 
 <sub><b>ALGUMAS COISAS QUE ESTOU CONSTRUINDO</b></sub>
 
 ## Projetos
 
 ### BIBI
+
 **Biblioteca Inteligente**
 
 Sistema feito para facilitar o gerenciamento de bibliotecas escolares — controle de acervo, empréstimos, devoluções e outras operações reunidas em um só lugar.
 
-[![Repositório](https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E)](https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente)
+<a href="https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente">
+  <img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório BIBI" />
+</a>
 
-<br />
+<br /><br />
 
 ### Moovibe
+
 **Música → Filme**
 
 Recomendador que transforma a vibe de uma a três músicas em cinema, combinando análise emocional, busca vetorial e um catálogo próprio de filmes.
 
-[![Repositório](https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E)](https://github.com/CaesarKairos/Moovibe)
-[![Acessar](https://img.shields.io/badge/ACESSAR-40916C?style=flat-square&logo=cloudflarepages&logoColor=FAF9F6)](https://moovibe.pages.dev/)
+<a href="https://github.com/CaesarKairos/Moovibe">
+  <img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório Moovibe" />
+</a>
+<a href="https://moovibe.pages.dev/">
+  <img src="https://img.shields.io/badge/ACESSAR-40916C?style=flat-square&logo=cloudflarepages&logoColor=FAF9F6" alt="Acessar Moovibe" />
+</a>
+
+<br /><br />
+
+<div align="center">
+
+<p>
+  Estes são só alguns dos projetos.<br />
+  O portfólio completo reúne detalhes, contexto, tecnologias e outros trabalhos.
+</p>
+
+<a href="https://caesarkairos.pages.dev/">
+  <img src="https://img.shields.io/badge/EXPLORAR%20PORTFÓLIO%20COMPLETO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Explorar portfólio completo" />
+</a>
+
+</div>
 
 <br />
 
-> Estes são só alguns dos projetos. O portfólio completo reúne detalhes, contexto, tecnologias e outros trabalhos.
+<img src="./img/readme/divider.svg" width="100%" alt="" />
 
-### [→ Explorar o portfólio completo](https://caesarkairos.pages.dev/)
-
----
+<br />
 
 <sub><b>TECNOLOGIAS & FERRAMENTAS</b></sub>
 
@@ -89,7 +125,7 @@ Recomendador que transforma a vibe de uma a três músicas em cinema, combinando
 
 **Dados**
 
-![SQL](https://img.shields.io/badge/SQL-40916C?style=flat-square&logo=database&logoColor=FAF9F6)
+![SQL](https://img.shields.io/badge/SQL-40916C?style=flat-square&logoColor=FAF9F6)
 ![SQLite](https://img.shields.io/badge/SQLite-40916C?style=flat-square&logo=sqlite&logoColor=FAF9F6)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-40916C?style=flat-square&logo=postgresql&logoColor=FAF9F6)
 ![Cloudflare D1](https://img.shields.io/badge/Cloudflare%20D1-40916C?style=flat-square&logo=cloudflare&logoColor=FAF9F6)
@@ -115,24 +151,35 @@ Recomendador que transforma a vibe de uma a três músicas em cinema, combinando
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-ECF39E?style=flat-square&logo=githubactions&logoColor=31572C)
 ![Playwright](https://img.shields.io/badge/Playwright-ECF39E?style=flat-square&logo=playwright&logoColor=31572C)
 
----
+<br />
+
+<img src="./img/readme/divider.svg" width="100%" alt="" />
+
+<br /><br />
 
 <div align="center">
 
-<img src="./img/alien-svgrepo-com.svg" width="38" alt="" />
-
-<sub>O README é só a entrada.</sub>
-
-### O portfólio completo está em  
-## [caesarkairos.pages.dev](https://caesarkairos.pages.dev/)
-
-Projetos, detalhes, experiências e tudo aquilo que não cabe muito bem em um README.
+<img src="./img/alien-svgrepo-com.svg" width="34" alt="" />
 
 <br />
 
-[![Visitar portfólio](https://img.shields.io/badge/ENTRAR%20NO%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6)](https://caesarkairos.pages.dev/)
+<sub>O README é só a entrada.</sub>
+
+### O portfólio completo está lá.
+
+<p>
+  Projetos, detalhes, experiências e tudo aquilo que não cabe muito bem aqui.
+</p>
+
+<code>caesarkairos.pages.dev</code>
 
 <br /><br />
+
+<a href="https://caesarkairos.pages.dev/">
+  <img src="https://img.shields.io/badge/ENTRAR%20NO%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Entrar no portfólio" />
+</a>
+
+<br /><br /><br />
 
 <sub>© 2026 Cesar Batista · Caesar Kairos</sub>
 
