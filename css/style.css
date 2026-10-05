@@ -275,3 +275,12 @@ button[class*="rounded-full"]:active {
     transition: none;
   }
 }
+
+/* ── Seção de artigos condicional ──────────────────────────────────────────── */
+/* Controlada por js/config.js → siteConfig.showArticles.
+   Quando `showArticles` é `false`, o <head> adiciona `.articles-hidden` no
+   <html> e os elementos marcados deixam de ser exibidos (o código permanece). */
+.articles-hidden [data-articles-section],
+.articles-hidden [data-articles-link] {
+  display: none !important;
+}

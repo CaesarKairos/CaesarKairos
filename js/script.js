@@ -12,13 +12,14 @@ const skillsData = {
     "React do Zero ao Avançado",
   ],
   Ferramentas: [
-    "VS Code", "Git & GitHub", "Postman", "Figma",
-    "Vercel", "Railway", "Docker (básico)",
+    "VS Code", "Git & GitHub", "Vitest", "Playwright",
+    "Cloudflare", "Godot",
   ],
   Tecnologias: [
-    "HTML / CSS", "JavaScript", "TypeScript", "React", "Next.js",
-    "Node.js", "Express", "MongoDB", "SQL",
-    "Tailwind CSS", "REST APIs",
+    "HTML / CSS", "JavaScript", "TypeScript", "Python",
+    "Flask", "FastAPI", "REST APIs", "WebSockets",
+    "SQL", "SQLite", "PostgreSQL", "Cloudflare D1",
+    "Cloudflare Workers", "Gemini API", "Vectorize", "GDScript",
   ],
   "Soft Skills": [
     "Curiosidade intelectual", "Escrita criativa",
@@ -211,7 +212,14 @@ function renderArticleCard(article, staggerIndex) {
     </a>`;
 }
 
+// ─── Artigos: visibilidade conforme js/config.js ──────────────────────────────
+// Sem siteConfig definido (config.js não carregado), mantém tudo visível.
+function isArticlesEnabled() {
+  return typeof siteConfig === "undefined" || siteConfig.showArticles !== false;
+}
+
 function initArticles() {
+  if (!isArticlesEnabled()) return;
   if (!Array.isArray(articlesData)) return;
 
   const orderedArticles = [...articlesData].sort((a, b) => b.date.localeCompare(a.date));

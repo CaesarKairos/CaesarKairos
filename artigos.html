@@ -14,6 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
+    <!-- Site config: se os artigos estiverem ocultos, volta para a home -->
+    <script src="js/config.js"></script>
+    <script>
+      if (typeof siteConfig !== "undefined" && siteConfig.showArticles === false) {
+        document.documentElement.classList.add("articles-hidden");
+        window.location.replace("index.html");
+      }
+    </script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -30,7 +39,7 @@
             <a href="index.html#sobre" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="sobre">Sobre</a>
             <a href="index.html#projetos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="projetos">Projetos</a>
             <a href="index.html#skills" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="skills">Skills</a>
-            <a href="index.html#artigos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="artigos">Artigos</a>
+            <a href="index.html#artigos" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="artigos" data-articles-link>Artigos</a>
             <a href="index.html#contato" class="nav-link text-sm text-[#40916C] hover:text-[#31572C] transition-colors font-medium" data-section="contato">Contato</a>
             <a href="mailto:cesarbatistasantos08@gmail.com" class="ml-2 px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">Fale comigo</a>
           </div>
@@ -52,7 +61,7 @@
           <a href="index.html#sobre" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Sobre</a>
           <a href="index.html#projetos" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Projetos</a>
           <a href="index.html#skills" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Skills</a>
-          <a href="index.html#artigos" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Artigos</a>
+          <a href="index.html#artigos" data-articles-link class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Artigos</a>
           <a href="index.html#contato" class="text-sm text-[#40916C] font-medium hover:text-[#31572C] transition-colors">Contato</a>
           <a href="mailto:cesarbatistasantos08@gmail.com" class="px-4 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold text-center hover:bg-[#31572C] transition-colors">Fale comigo</a>
         </div>
