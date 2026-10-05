@@ -20,15 +20,7 @@ Gosto de transformar ideias em projetos reais — de aplicações web a experime
 
 <br />
 
-<a href="https://caesarkairos.pages.dev/">
-  <img src="https://img.shields.io/badge/VER%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Ver portfólio" />
-</a>
-<a href="https://www.linkedin.com/in/cesarbatista01000011/">
-  <img src="https://img.shields.io/badge/LINKEDIN-31572C?style=for-the-badge&logo=linkedin&logoColor=ECF39E" alt="LinkedIn" />
-</a>
-<a href="mailto:cesarbatistasantos08@gmail.com">
-  <img src="https://img.shields.io/badge/E--MAIL-90A955?style=for-the-badge&logo=gmail&logoColor=31572C" alt="E-mail" />
-</a>
+<a href="https://caesarkairos.pages.dev/"><img src="https://img.shields.io/badge/VER%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Ver portfólio"></a> <a href="https://www.linkedin.com/in/cesarbatista01000011/"><img src="https://img.shields.io/badge/LINKEDIN-31572C?style=for-the-badge&logo=linkedin&logoColor=ECF39E" alt="LinkedIn"></a> <a href="mailto:cesarbatistasantos08@gmail.com"><img src="https://img.shields.io/badge/E--MAIL-90A955?style=for-the-badge&logo=gmail&logoColor=31572C" alt="E-mail"></a>
 
 <br clear="right" />
 <br />
@@ -63,9 +55,7 @@ Mais do que acumular tecnologias, gosto de usá-las para construir projetos com 
 
 Sistema feito para facilitar o gerenciamento de bibliotecas escolares — controle de acervo, empréstimos, devoluções e outras operações reunidas em um só lugar.
 
-<a href="https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente">
-  <img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório BIBI" />
-</a>
+<a href="https://github.com/CaesarKairos/BIBI-Biblioteca-Inteligente"><img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório BIBI"></a>
 
 <br /><br />
 
@@ -75,12 +65,7 @@ Sistema feito para facilitar o gerenciamento de bibliotecas escolares — contro
 
 Recomendador que transforma a vibe de uma a três músicas em cinema, combinando análise emocional, busca vetorial e um catálogo próprio de filmes.
 
-<a href="https://github.com/CaesarKairos/Moovibe">
-  <img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório Moovibe" />
-</a>
-<a href="https://moovibe.pages.dev/">
-  <img src="https://img.shields.io/badge/ACESSAR-40916C?style=flat-square&logo=cloudflarepages&logoColor=FAF9F6" alt="Acessar Moovibe" />
-</a>
+<a href="https://github.com/CaesarKairos/Moovibe"><img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório Moovibe"></a> <a href="https://moovibe.pages.dev/"><img src="https://img.shields.io/badge/ACESSAR-40916C?style=flat-square&logo=cloudflarepages&logoColor=FAF9F6" alt="Acessar Moovibe"></a>
 
 <br /><br />
 
@@ -91,9 +76,7 @@ Recomendador que transforma a vibe de uma a três músicas em cinema, combinando
   O portfólio completo reúne detalhes, contexto, tecnologias e outros trabalhos.
 </p>
 
-<a href="https://caesarkairos.pages.dev/">
-  <img src="https://img.shields.io/badge/EXPLORAR%20PORTFÓLIO%20COMPLETO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Explorar portfólio completo" />
-</a>
+<a href="https://caesarkairos.pages.dev/"><img src="https://img.shields.io/badge/EXPLORAR%20PORTFÓLIO%20COMPLETO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Explorar portfólio completo"></a>
 
 </div>
 
@@ -125,7 +108,7 @@ Recomendador que transforma a vibe de uma a três músicas em cinema, combinando
 
 **Dados**
 
-![SQL](https://img.shields.io/badge/SQL-40916C?style=flat-square&logoColor=FAF9F6)
+![SQL](https://img.shields.io/badge/SQL-40916C?style=flat-square&logo=sqlite&logoColor=FAF9F6)
 ![SQLite](https://img.shields.io/badge/SQLite-40916C?style=flat-square&logo=sqlite&logoColor=FAF9F6)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-40916C?style=flat-square&logo=postgresql&logoColor=FAF9F6)
 ![Cloudflare D1](https://img.shields.io/badge/Cloudflare%20D1-40916C?style=flat-square&logo=cloudflare&logoColor=FAF9F6)
@@ -135,7 +118,7 @@ Recomendador que transforma a vibe de uma a três músicas em cinema, combinando
 ![Gemini](https://img.shields.io/badge/Gemini%20API-90A955?style=flat-square&logo=googlegemini&logoColor=31572C)
 ![Embeddings](https://img.shields.io/badge/Embeddings-90A955?style=flat-square&logo=googlegemini&logoColor=31572C)
 ![Vectorize](https://img.shields.io/badge/Vectorize-90A955?style=flat-square&logo=cloudflare&logoColor=31572C)
-![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-90A955?style=flat-square&logo=openai&logoColor=31572C)
+![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-90A955?style=flat-square&logo=googlegemini&logoColor=31572C)
 
 **Game dev**
 
@@ -147,9 +130,9 @@ Recomendador que transforma a vibe de uma a três músicas em cinema, combinando
 
 ![Git](https://img.shields.io/badge/Git-ECF39E?style=flat-square&logo=git&logoColor=31572C)
 ![GitHub](https://img.shields.io/badge/GitHub-ECF39E?style=flat-square&logo=github&logoColor=31572C)
-![VS Code](https://img.shields.io/badge/VS%20Code-ECF39E?style=flat-square&logo=visualstudiocode&logoColor=31572C)
+![VS Code](https://img.shields.io/badge/VS%20Code-ECF39E?style=flat-square&logoColor=31572C)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-ECF39E?style=flat-square&logo=githubactions&logoColor=31572C)
-![Playwright](https://img.shields.io/badge/Playwright-ECF39E?style=flat-square&logo=playwright&logoColor=31572C)
+![Playwright](https://img.shields.io/badge/Playwright-ECF39E?style=flat-square&logo=googlechrome&logoColor=31572C)
 
 <br />
 
@@ -175,9 +158,7 @@ Recomendador que transforma a vibe de uma a três músicas em cinema, combinando
 
 <br /><br />
 
-<a href="https://caesarkairos.pages.dev/">
-  <img src="https://img.shields.io/badge/ENTRAR%20NO%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Entrar no portfólio" />
-</a>
+<a href="https://caesarkairos.pages.dev/"><img src="https://img.shields.io/badge/ENTRAR%20NO%20PORTFÓLIO-40916C?style=for-the-badge&logo=cloudflarepages&logoColor=FAF9F6" alt="Entrar no portfólio"></a>
 
 <br /><br /><br />
 
