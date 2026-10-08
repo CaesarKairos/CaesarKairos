@@ -14,9 +14,9 @@
 
 **Cesar Batista** — Caesar Kairos.
 
-Estudante de Desenvolvimento de Sistemas e desenvolvedor Full Stack, com experiência em **frontend, backend, APIs, bancos de dados, inteligência artificial e integração entre serviços e tecnologias**.
+Estudante de Desenvolvimento de Sistemas e desenvolvedor Full Stack, com experiência em **frontend, backend, APIs, bancos de dados e integração entre serviços e tecnologias**.
 
-Gosto de transformar ideias em projetos reais — de aplicações web a experimentos com IA e desenvolvimento de jogos.
+Gosto de transformar ideias em coisas que realmente funcionam — do primeiro código até uma aplicação que possa ser utilizada por alguém.
 
 <br />
 
@@ -33,11 +33,13 @@ Gosto de transformar ideias em projetos reais — de aplicações web a experime
 
 ## Sobre mim
 
-Minha relação com tecnologia passa muito pela curiosidade: gosto de entender **como as coisas funcionam**, experimentar caminhos diferentes e transformar esse processo em algo utilizável.
+Meu interesse por programação começou através de vídeos na Internet. O que inicialmente parecia apenas uma área interessante acabou se tornando uma forma de criar coisas que, antes de existirem, eram apenas ideias. Hoje sou estudante de Desenvolvimento de Sistemas e desenvolvedor Full Stack — movido pelo prazer de transformar ideias em algo que realmente funciona, do primeiro código até uma aplicação que possa ser utilizada por alguém.
 
-Hoje, meus projetos passam por desenvolvimento web **Full Stack**, bancos de dados, APIs, serviços em nuvem, inteligência artificial e game development.
+Apesar de atuar em uma área de exatas, me considero profundamente ligado às humanas. Escrevo livros e histórias, tenho interesse por psicologia, arte, cinema, literatura e mitologia. Acredito que tecnologia deve ser acessível — não só no uso, mas no conhecimento para compreendê-la. Com o avanço da inteligência artificial, essa possibilidade de transformar ideias em ferramentas está se tornando cada vez mais real.
 
-Mais do que acumular tecnologias, gosto de usá-las para construir projetos com **identidade própria**, seja resolvendo um problema real ou explorando uma ideia simplesmente porque ela parecia interessante demais para ficar só no papel.
+Fora do código, gosto muito de cinema, especialmente de filmes que provavelmente passariam despercebidos em qualquer outra circunstância. Também gosto de jogos 2D, como *OneShot*, e de Minecraft — mesmo sem nunca ter chegado a zerá-lo. Amo a cor verde e aliens estereotipados do cinema: para mim, eles são um exemplo de como a arte molda a percepção coletiva. Uma representação criada décadas atrás que continua definindo o que imaginamos quando pensamos em algo que sequer sabemos se existe.
+
+Quero ser alguém a quem outras pessoas possam recorrer quando precisarem de ajuda — em desenvolvimento, na escrita ou na arte. Da mesma forma que comunidades tornaram possível que eu chegasse até aqui, quero poder compartilhar esse caminho. Mais do que acumular conhecimento, quero ser capaz de transmiti-lo.
 
 <br />
 
