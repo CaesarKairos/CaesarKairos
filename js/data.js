@@ -19,6 +19,26 @@ const articlesData = [
 
 const projectsData = [
   {
+    id: "off-onde-falta-futuro",
+    name: "O.F.F. — Onde Falta Futuro",
+    tagline: "Narrativa interativa e investigativa em 2D",
+    description:
+      "Narrativa interativa em pixel art sobre problemas socioambientais urbanos e periféricos, os ODS e o racismo ambiental. Projeto em desenvolvimento.",
+    tags: ["Godot", "GDScript", "JSON"],
+    githubUrl: "https://github.com/CaesarKairos/O.F.F.-Onde-Falta-Futuro",
+    recognition:
+      "Projeto vencedor da FECEG de Guarulhos, selecionado para representar a cidade na FEBRACE.",
+    detail: {
+      summary:
+        "O.F.F. — Onde Falta Futuro é uma narrativa interativa e investigativa em 2D, com estética pixel art. A equipe desenvolve o projeto para abordar problemas socioambientais em contextos urbanos e periféricos, relacionando os Objetivos de Desenvolvimento Sustentável (ODS) ao racismo ambiental.",
+      features: [
+        "Narrativa investigativa acompanhando Lyanna, uma jornalista que apura problemas enfrentados em sua cidade",
+        "Abordagem de questões socioambientais e dos Objetivos de Desenvolvimento Sustentável",
+        "Projeto em desenvolvimento"
+      ]
+    }
+  },
+  {
     id: "bibi",
     name: "BIBI",
     tagline: "Biblioteca Inteligente",

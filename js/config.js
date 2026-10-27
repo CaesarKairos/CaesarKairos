@@ -15,5 +15,5 @@
 // antes do paint, para evitar o "flash" do conteúdo oculto.
 const siteConfig = {
   showArticles: false,
-  hiddenSkillCategories: ["Cursos"],
+  hiddenSkillCategories: [],
 };

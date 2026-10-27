@@ -6,10 +6,9 @@ document.documentElement.classList.add("js");
 // ─── Skills Data ──────────────────────────────────────────────────────────────
 const skillsData = {
   Cursos: [
-    "Desenvolvimento de Sistemas (SENAI)",
-    "JavaScript Moderno (Udemy)",
-    "Node.js & APIs REST",
-    "React do Zero ao Avançado",
+    "Curso Técnico Integrado ao Ensino Médio em Análise e Desenvolvimento de Sistemas (ADS) — E.E. Profª Maria Aparecida Félix Porto",
+    "Inglês",
+    "Francês",
   ],
   Ferramentas: [
     "VS Code", "Git & GitHub", "Vitest", "Playwright",
@@ -94,7 +93,7 @@ function initNavScroll() {
 // ─── Nav: scrollspy (link ativo) ──────────────────────────────────────────────
 function initScrollSpy() {
   const navLinks = document.querySelectorAll(".nav-link");
-  const sections = ["sobre", "projetos", "skills", "artigos", "contato"]
+  const sections = ["sobre", "projetos", "reconhecimento", "skills", "artigos", "contato"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 
@@ -288,6 +287,12 @@ function renderProjectDetail(project) {
         <p class="text-xl text-[#40916C] font-medium mt-4">${project.tagline}</p>
       </div>
 
+      ${project.recognition ? `<aside class="mb-8 rounded-2xl border border-[#90A955]/35 bg-[#ECF39E]/35 p-5">
+        <p class="text-xs font-semibold tracking-[0.15em] uppercase text-[#40916C] mb-2">Reconhecimento</p>
+        <p class="text-sm font-semibold text-[#31572C]">FECEG de Guarulhos — seleção para a FEBRACE</p>
+        <p class="text-sm text-[#31572C]/75 leading-relaxed mt-1">${project.recognition}</p>
+      </aside>` : ""}
+
       <p class="text-sm text-[#31572C]/75 leading-relaxed mb-8">${project.detail.summary}</p>
 
       <div class="grid gap-8 lg:grid-cols-[1.4fr_1fr] mb-8">
@@ -339,6 +344,29 @@ function initProjectDetail() {
   const project = projectsData.find((item) => item.id === slug);
 
   detailContainer.innerHTML = project ? renderProjectDetail(project) : renderProjectNotFound();
+}
+
+function renderProjectCard(project, index) {
+  const tags = project.tags.map((tag) => `<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">${tag}</span>`).join("");
+  return `<article class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="${index}">
+    <div>
+      <div class="flex items-start justify-between gap-4 mb-2"><h3 class="display-font text-2xl font-bold text-[#31572C] leading-tight">${project.name}</h3><span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full shrink-0">${project.id === "off-onde-falta-futuro" ? "em desenvolvimento" : "projeto"}</span></div>
+      <p class="text-sm text-[#40916C] font-medium mb-3">${project.tagline}</p>
+      <p class="text-sm text-[#31572C]/70 leading-relaxed">${project.description}</p>
+    </div>
+    ${project.recognition ? `<aside class="rounded-xl border border-[#90A955]/30 bg-[#ECF39E]/35 p-4"><p class="text-xs font-semibold tracking-wider uppercase text-[#40916C] mb-1">FECEG de Guarulhos — seleção para a FEBRACE</p><p class="text-xs text-[#31572C]/80 leading-relaxed">${project.recognition}</p></aside>` : ""}
+    <div class="flex flex-wrap gap-1.5 mt-auto">${tags}</div>
+    <div class="flex flex-wrap gap-3 pt-2 border-t border-[#90A955]/20">
+      <a href="projeto.html?slug=${project.id}" class="flex-1 min-w-[120px] inline-flex items-center justify-center gap-1.5 py-2 rounded-full bg-[#40916C] text-[#FAF9F6] text-sm font-semibold hover:bg-[#31572C] transition-colors">${icons.arrowRight}<span>Saiba mais</span></a>
+      <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 px-4 py-2 rounded-full border border-[#90A955]/40 text-[#40916C] text-sm font-medium hover:bg-[#ECF39E] hover:border-[#40916C] transition-colors">${icons.github}<span>GitHub</span></a>
+    </div>
+  </article>`;
+}
+
+function initProjectCards() {
+  const grid = document.getElementById("projects-grid");
+  if (!grid || !Array.isArray(projectsData)) return;
+  grid.innerHTML = projectsData.map(renderProjectCard).join("");
 }
 
 // ─── Skills: troca de aba ─────────────────────────────────────────────────────
@@ -399,6 +427,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeroEntrance();
   initArticles();
   initProjectDetail();
+  initProjectCards();
   initScrollReveal();
   initNavScroll();
   initScrollSpy();

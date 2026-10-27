@@ -81,6 +81,16 @@ Experiência interativa que transforma o **export da conta do Letterboxd** em um
 
 <br /><br />
 
+### O.F.F. — Onde Falta Futuro
+
+Narrativa interativa e investigativa em 2D, com estética pixel art, sobre questões socioambientais urbanas e periféricas, os ODS e o racismo ambiental. Projeto em desenvolvimento, criado em equipe.
+
+**Reconhecimento:** projeto vencedor da FECEG de Guarulhos, selecionado para representar a cidade na FEBRACE.
+
+<a href="https://github.com/CaesarKairos/O.F.F.-Onde-Falta-Futuro"><img src="https://img.shields.io/badge/REPOSITÓRIO-31572C?style=flat-square&logo=github&logoColor=ECF39E" alt="Repositório O.F.F. — Onde Falta Futuro"></a>
+
+<br /><br />
+
 <div align="center">
 
 <p>
