@@ -25,6 +25,9 @@ const skillsData = {
     "Aprendizado autodidata", "Pensamento crítico",
     "Comunicação clara", "Interesse em compartilhar",
   ],
+  Experiências: [
+    "FECEG de Guarulhos — projeto O.F.F. vencedor, selecionado para representar a cidade na FEBRACE (desenvolvido em equipe)",
+  ],
 };
 
 const skillVariant = {
@@ -32,6 +35,7 @@ const skillVariant = {
   Ferramentas: "bg-[#90A955]/20 text-[#31572C]",
   Tecnologias: "bg-[#40916C]/15 text-[#40916C]",
   "Soft Skills": "bg-[#ECF39E] text-[#31572C]",
+  Experiências: "bg-[#40916C]/15 text-[#40916C]",
 };
 
 // ─── Hero: entrada da página ──────────────────────────────────────────────────
@@ -93,7 +97,7 @@ function initNavScroll() {
 // ─── Nav: scrollspy (link ativo) ──────────────────────────────────────────────
 function initScrollSpy() {
   const navLinks = document.querySelectorAll(".nav-link");
-  const sections = ["sobre", "projetos", "reconhecimento", "skills", "artigos", "contato"]
+  const sections = ["sobre", "projetos", "skills", "artigos", "contato"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 

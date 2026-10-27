@@ -7,8 +7,8 @@
 //
 // ▸ hiddenSkillCategories: lista de categorias da seção Skills que devem
 //   ficar ocultas (o botão/aba correspondente some). Use exatamente os nomes
-//   das abas: "Cursos" | "Ferramentas" | "Tecnologias" | "Soft Skills".
-//   Ex.: hiddenSkillCategories: ["Cursos", "Soft Skills"]
+//   das abas: "Cursos" | "Ferramentas" | "Tecnologias" | "Soft Skills" | "Experiências".
+//   Ex.: hiddenSkillCategories: ["Cursos", "Soft Skills", "Experiências"]
 //   Se todas forem ocultadas, a seção Skills inteira some do site.
 //
 // Obs.: este arquivo é carregado de forma síncrona no <head> das páginas,

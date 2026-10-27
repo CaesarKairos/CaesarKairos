@@ -296,3 +296,7 @@ button[class*="rounded-full"]:active {
 .skill-hidden-Soft-Skills .skill-tab[data-tab="Soft Skills"] {
   display: none !important;
 }
+
+.skill-hidden-Experiências .skill-tab[data-tab="Experiências"] {
+  display: none !important;
+}
