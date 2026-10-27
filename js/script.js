@@ -350,7 +350,7 @@ function renderProjectCard(project, index) {
   const tags = project.tags.map((tag) => `<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-[#90A955]/20 text-[#31572C]">${tag}</span>`).join("");
   return `<article class="reveal group bg-[#FAF9F6] border border-[#90A955]/25 rounded-2xl p-6 flex flex-col gap-4 hover:border-[#40916C]/60 hover:shadow-lg hover:shadow-[#40916C]/10 transition-all duration-300" data-stagger="${index}">
     <div>
-      <div class="flex items-start justify-between gap-4 mb-2"><h3 class="display-font text-2xl font-bold text-[#31572C] leading-tight">${project.name}</h3><span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full shrink-0">${project.id === "off-onde-falta-futuro" ? "em desenvolvimento" : "projeto"}</span></div>
+      <div class="flex items-start justify-between gap-4 mb-2"><h3 class="display-font text-2xl font-bold text-[#31572C] leading-tight">${project.name}</h3><span class="text-xs font-semibold tracking-wider uppercase text-[#90A955] bg-[#ECF39E]/60 px-2 py-1 rounded-full shrink-0">${project.category}</span></div>
       <p class="text-sm text-[#40916C] font-medium mb-3">${project.tagline}</p>
       <p class="text-sm text-[#31572C]/70 leading-relaxed">${project.description}</p>
     </div>

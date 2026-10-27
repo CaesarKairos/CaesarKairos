@@ -21,6 +21,7 @@ const projectsData = [
   {
     id: "off-onde-falta-futuro",
     name: "O.F.F. — Onde Falta Futuro",
+    category: "projeto escolar",
     tagline: "Narrativa interativa e investigativa em 2D",
     description:
       "Narrativa interativa em pixel art sobre problemas socioambientais urbanos e periféricos, os ODS e o racismo ambiental. Projeto em desenvolvimento.",
@@ -41,6 +42,7 @@ const projectsData = [
   {
     id: "bibi",
     name: "BIBI",
+    category: "projeto escolar",
     tagline: "Biblioteca Inteligente",
     description:
       "Sistema para gerenciamento de bibliotecas físicas escolares, reunindo acervo, circulação, leitores, agenda e gestão em uma aplicação desktop com acesso complementar pelo navegador.",
@@ -62,6 +64,7 @@ const projectsData = [
   {
     id: "moovibe",
     name: "Moovibe",
+    category: "projeto pessoal",
     tagline: "Música → Filme",
     description:
       "Recomendador que transforma a vibe de uma a três músicas em cinema, combinando análise emocional, busca vetorial e um catálogo próprio de filmes.",
@@ -83,6 +86,7 @@ const projectsData = [
   {
     id: "judge-my-letterboxd",
     name: "Judge My Letterboxd",
+    category: "projeto pessoal",
     tagline: "Seu gosto cinematográfico será julgado",
     description:
       "Experiência interativa que transforma o export de uma conta do Letterboxd em um julgamento cinematográfico personalizado, usando padrões reais da conta como evidência.",
