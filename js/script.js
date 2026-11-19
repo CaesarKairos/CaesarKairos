@@ -428,6 +428,11 @@ function initSkillsTabs() {
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
+  if (window.siteI18n) {
+    siteI18n.translateObject(skillsData);
+    if (typeof articlesData !== "undefined") siteI18n.translateObject(articlesData);
+    if (typeof projectsData !== "undefined") siteI18n.translateObject(projectsData);
+  }
   initHeroEntrance();
   initArticles();
   initProjectDetail();
@@ -437,4 +442,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollSpy();
   initMobileMenu();
   initSkillsTabs();
+  if (window.siteI18n) siteI18n.translateDocument(document);
 });
